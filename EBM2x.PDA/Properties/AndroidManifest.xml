@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.ebm2x">
+  <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="28" />
+  <application android:label="EBM2x.Android"></application>
+  <uses-permission android:name="android.permission.BLUETOOTH" />
+  <uses-permission android:name="android.permission.CAMERA" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.ACCESS_CACHE_FILESYSTEM" />
+  <uses-permission android:name="android.permission.DELETE_CACHE_FILES" />
+  <uses-permission android:name="android.permission.REBOOT" />
+  <uses-permission android:name="android.permission.RECOVERY" />
+  <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.SEND_SMS" />
+  <uses-permission android:name="android.permission.VIBRATE" />
+</manifest>
