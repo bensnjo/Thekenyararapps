@@ -15,7 +15,6 @@
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
     <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
     <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
     <AndroidUseAapt2>true</AndroidUseAapt2>
@@ -134,7 +133,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\EBM2x\EBM2x.csproj">
-      <Project>{BE045441-F049-4094-8CED-6F2544615B7F}</Project>
+      <Project>{3F1A621E-F97E-412B-A291-03E66B4914DF}</Project>
       <Name>EBM2x</Name>
     </ProjectReference>
   </ItemGroup>

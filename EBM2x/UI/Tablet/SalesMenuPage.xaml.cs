@@ -25,7 +25,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using System.Management;
+//using System.Management;
 using System.Linq;
 
 namespace EBM2x.UI.Tablet
@@ -161,10 +161,10 @@ namespace EBM2x.UI.Tablet
                 try
                 {
                     //Start Serial
-                    ManagementObjectSearcher searcher = new ManagementObjectSearcher("SELECT * FROM Win32_BIOS");
-                    ManagementObject obj = searcher.Get().Cast<ManagementObject>().FirstOrDefault();
-                    Console.WriteLine((string)obj["SerialNumber"]);
-                    Console.WriteLine("iyi ni serial number");
+                    //ManagementObjectSearcher searcher = new ManagementObjectSearcher("SELECT * FROM Win32_BIOS");
+                    //ManagementObject obj = searcher.Get().Cast<ManagementObject>().FirstOrDefault();
+                    //Console.WriteLine((string)obj["SerialNumber"]);
+                    //Console.WriteLine("iyi ni serial number");
 
                     //End Get Serial Number
                     string url = RraSdcService.EXTERNAL_URL + "/" + "selectServerTime";
