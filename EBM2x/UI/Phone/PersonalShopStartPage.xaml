@@ -8,9 +8,9 @@
         <draw:FixedGrid x:Name="fixedGrid00" ColumnCount="16" RowCount="30">
             <component:PhoneHeaderPanel Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="16"/>
 
-            <component:LogoBackground Grid.Row="2" Grid.Column="0" Grid.RowSpan="14" Grid.ColumnSpan="16"/>
+            <!--<component:LogoBackground Grid.Row="2" Grid.Column="0" Grid.RowSpan="14" Grid.ColumnSpan="16"/>-->
 
-            <draw:DrawDateTime Grid.Row="7" Grid.Column="2" Grid.RowSpan="4" Grid.ColumnSpan="12" 
+            <draw:DrawDateTime Grid.Row="7" Grid.Column="2" Grid.RowSpan="4" Grid.ColumnSpan="13" 
                                TextAlign="CENTER" Format="dd/MM/yyyy"/>
             <draw:DrawDateTime Grid.Row="11" Grid.Column="2" Grid.RowSpan="3" Grid.ColumnSpan="12" 
                                TextAlign="CENTER" Format="HH:mm:ss"/>
@@ -22,10 +22,10 @@
 
             <draw:FixedGrid x:Name="fixedGrid01" ColumnCount="16" RowCount="2" 
                             Grid.Row="20" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="16">
-                <draw:FunctionButton Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="4"/>
+                <draw:FunctionButton Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="4" ButtonColor="#FF000000"/>
                 <draw:FunctionButton Grid.Row="0" Grid.Column="4" Grid.RowSpan="2" Grid.ColumnSpan="12"  
                              ButtonClicked="OnFunctionCalled"
-                             Text="Start" FunctionID="Start" TextColor="000000" FillRate="0.5" ButtonColor="FFFF00" BorderColor="808080"/>
+                             Text="Start" FunctionID="Start" TextColor="FFFFFF" FillRate="0.5" ButtonColor="#E30613" BorderColor="808080"/>
             </draw:FixedGrid>
             
             <component:KeypadPanel Grid.Row="22" Grid.Column="0" Grid.RowSpan="8" Grid.ColumnSpan="16"

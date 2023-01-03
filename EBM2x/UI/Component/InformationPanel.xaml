@@ -5,7 +5,7 @@
              x:Class="EBM2x.UI.Component.InformationPanel">
     <ContentView.Content>
         <draw:FixedGrid ColumnCount="16" RowCount="2">
-            <draw:DrawBox Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="16" Color="d4f0cd"/>
+            <draw:DrawBox Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="16" Color="#fad0cf"/>
             <draw:DrawImage Grid.Row="0" Grid.Column="0" Icon="warning.png"/>
             <draw:DrawImage Grid.Row="1" Grid.Column="0" Icon="information.png"/>
             <draw:DrawTranslationText x:Name="warningText"

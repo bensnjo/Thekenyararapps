@@ -6,8 +6,8 @@
              x:Class="EBM2x.UI.Backoffice.StockManagement.StockDatePage">
     <ContentPage.Content>
         <drawbase:BackofficeBaseGrid BackgroundColor="White">
-            <drawbase:DrawBox Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="90" Color="f9b621"/>
-            <drawbase:DrawBox Grid.Row="2" Grid.Column="0" Grid.RowSpan="18" Grid.ColumnSpan="90" Color="ffffcc"/>
+            <drawbase:DrawBox Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="90" Color="#E30613"/>
+            <drawbase:DrawBox Grid.Row="2" Grid.Column="0" Grid.RowSpan="18" Grid.ColumnSpan="90" Color="ffffff"/>
             <!--타이틀=====================================================================================-->
             <drawbase:DrawImage Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="3" Grid.RowSpan="1"
                                 Icon="TitleIcon.png"/>
@@ -20,10 +20,10 @@
                              ButtonClicked="OnFunctionPrintReport"/-->
             <drawbase:IconTextButton Grid.Column="74" Grid.Row="0" Grid.ColumnSpan="8" Grid.RowSpan="2"
                              x:Name="btnExport" Text="Export" FillRate="0.3" Icon="i_export.png"
-                             ButtonClicked="OnFunctionExport"/>
+                             ButtonClicked="OnFunctionExport" ButtonColor="ff000000"/>
             <drawbase:IconTextButton Grid.Column="82" Grid.Row="0" Grid.ColumnSpan="8" Grid.RowSpan="2"
                              x:Name="btnClose" Text="Close" FillRate="0.3" Icon="i_close.png"
-                             ButtonClicked="OnFunctionClose"/>
+                             ButtonClicked="OnFunctionClose" ButtonColor="ff000000"/>
             <!--===========================================================================================-->
 
             <!--Grid Search Bar============================================================================-->
