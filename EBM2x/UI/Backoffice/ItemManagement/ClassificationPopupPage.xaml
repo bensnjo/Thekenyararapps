@@ -6,9 +6,9 @@
              x:Class="EBM2x.UI.Backoffice.ItemManagement.ClassificationPopupPage">
     <ContentPage.Content>
         <drawbase:BackofficeBaseGrid BackgroundColor="White">
-            <drawbase:DrawBox Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="90" Color="f9b621"/>
-            <drawbase:DrawBox Grid.Row="2" Grid.Column="60" Grid.RowSpan="18" Grid.ColumnSpan="30" Color="ddf3ea"/>
-            <drawbase:DrawBox Grid.Row="2" Grid.Column="0" Grid.RowSpan="18" Grid.ColumnSpan="60" Color="ffffcc"/>
+            <drawbase:DrawBox Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="90" Color="#E30613"/>
+            <drawbase:DrawBox Grid.Row="2" Grid.Column="60" Grid.RowSpan="18" Grid.ColumnSpan="30" Color="ffffff"/>
+            <drawbase:DrawBox Grid.Row="2" Grid.Column="0" Grid.RowSpan="18" Grid.ColumnSpan="60" Color="ffffff"/>
             <!--타이틀=====================================================================================-->
             <drawbase:DrawImage Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="3" Grid.RowSpan="1"
                                 Icon="TitleIcon.png"/>
@@ -43,7 +43,7 @@
                              x:Name="btnSearch" Text="Search" FillRate="0.6" Icon="query.png" ButtonColor="4169E1"
                              ButtonClicked="OnSearch"/>
             <!-- ListView ===========================================================================================-->
-            <drawbase:DrawBox Grid.Row="4" Grid.Column="0" Grid.RowSpan="1" Grid.ColumnSpan="60" Color="3498db"/>
+            <drawbase:DrawBox Grid.Row="4" Grid.Column="0" Grid.RowSpan="1" Grid.ColumnSpan="60" Color="#E30613"/>
             <drawbase:DrawGridHead Grid.Row="4" Grid.Column="0"  Grid.ColumnSpan="15"  Text= "  Item Class Code"/>
             <drawbase:DrawGridHead Grid.Row="4" Grid.Column="15"  Grid.ColumnSpan="5"  Text= "  Level"/>
             <drawbase:DrawGridHead Grid.Row="4" Grid.Column="20"  Grid.ColumnSpan="40"  Text= "  Item Class Name"/>

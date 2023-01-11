@@ -56,8 +56,10 @@ namespace EBM2x.RraSdc.process
                     HttpContent content = new StringContent(jsonRequest, Encoding.UTF8, "application/json");
                     HttpResponseMessage response = await client.PostAsync(url, content);
                     string jsonResponse = response.Content.ReadAsStringAsync().Result;
+                    Console.WriteLine("RESPONSE >>>>>>>> " + jsonResponse);
                     if (string.IsNullOrEmpty(jsonResponse)) jsonResponse = jsonResponse.Replace(":null,", ":\"\",");
 
+                    //RraSdcReceiveJsonWriter.WriteTransaction(RraSdcReceiveJsonWriter.GetFileName(), jsonResponse, true);
                     //create file  with json data  by Aime  Irak 20/04/2022 05:00 AM
                     if (File.Exists(RraSdcReceiveJsonWriter.GetFileName()))
                     {

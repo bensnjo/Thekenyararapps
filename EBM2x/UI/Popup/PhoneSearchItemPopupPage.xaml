@@ -12,7 +12,7 @@
             <component:PhoneHeaderPanel Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="23"
                                         OffEventHandler="True"/>
 
-            <draw:DrawBox Grid.Row="3" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="23" Color="ddf3ea"/>
+            <draw:DrawBox Grid.Row="3" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="23" Color="ffffff"/>
             <draw:FixedGrid x:Name="searchFixedGrid" ColumnCount="16" RowCount="11"
                             Grid.Row="3" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="23">
                 <draw:DrawText Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="4" 

@@ -1,6 +1,7 @@
 ﻿using EBM2x.Datafile.env;
 using EBM2x.Models.config;
 using EBM2x.RraSdc.model;
+using System;
 using System.Net.Http;
 
 namespace EBM2x.RraSdc
@@ -64,8 +65,10 @@ namespace EBM2x.RraSdc
         public static bool SetDefaultRequestHeaders(HttpClient client)
         {
             InitInfoVO initInfoVO = EnvRraSdcService.LoadEnvRraSdc();
+            Console.WriteLine("jsonRequest mfite" + initInfoVO.bhfId + initInfoVO.tin);
             if (initInfoVO != null && !string.IsNullOrEmpty(initInfoVO.tin))
             {
+               
                 client.DefaultRequestHeaders.Add(HEADER_TIN, initInfoVO.tin);
                 client.DefaultRequestHeaders.Add(HEADER_BHF_ID, initInfoVO.bhfId);
                 client.DefaultRequestHeaders.Add(HEADER_CMC_KEY, initInfoVO.cmcKey);

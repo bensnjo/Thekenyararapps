@@ -68,6 +68,7 @@ namespace EBM2x.RraSdc.process
                     RraSdcService.SetDefaultRequestHeaders(client);
 
                     string jsonRequest = JsonConvert.SerializeObject(trnsPurchaseReq);
+                    //Console.WriteLine(jsonRequest);
                     Console.WriteLine("jsonRequest mfite" + jsonRequest);
                     RraSdcReceiveJsonWriter.WriteTransactionREQ(RraSdcService.URL_TRNS_PURCHASE_SALES_SEARCH, jsonRequest);
                     HttpContent content = new StringContent(jsonRequest, Encoding.UTF8, "application/json");
@@ -76,11 +77,13 @@ namespace EBM2x.RraSdc.process
                     string jsonResponse = response.Content.ReadAsStringAsync().Result;
                     //string jsonResponse = RraSdcReceiveJsonWriter.read("201912131100129515_scc_selectTrnsPurchaseSalesList");
 
+                    Console.WriteLine("jsonRequest mfite2" + jsonResponse);
                     if (string.IsNullOrEmpty(jsonResponse)) jsonResponse = jsonResponse.Replace(":null,", ":\"\",");
 
                     if (!string.IsNullOrEmpty(jsonResponse))
                     {
                         TrnsPurchaseSalesRes trnsPurchaseSalesRes = JsonConvert.DeserializeObject<TrnsPurchaseSalesRes>(jsonResponse);
+                        Console.WriteLine("if not null" + jsonResponse);
                         if (trnsPurchaseSalesRes.resultCd.Equals("000"))
                         {
                             RraSdcReceiveJsonWriter.WriteTransactionSCC(RraSdcService.URL_TRNS_PURCHASE_SALES_SEARCH, jsonResponse);

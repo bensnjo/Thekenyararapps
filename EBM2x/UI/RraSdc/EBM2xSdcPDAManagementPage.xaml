@@ -5,9 +5,9 @@
              x:Class="EBM2x.UI.RraSdc.EBM2xSdcPDAManagementPage">
     <ContentPage.Content>
         <drawbase:BackofficeBaseGrid60 BackgroundColor="White">
-            <drawbase:DrawBox Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="60" Color="f9b621"/>
-            <drawbase:DrawBox Grid.Row="2" Grid.Column="0" Grid.RowSpan="5" Grid.ColumnSpan="60" Color="ddf3ea"/>
-            <drawbase:DrawBox Grid.Row="7" Grid.Column="0" Grid.RowSpan="13" Grid.ColumnSpan="60" Color="ffffcc"/>
+            <drawbase:DrawBox Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="60" Color="#E30613"/>
+            <drawbase:DrawBox Grid.Row="2" Grid.Column="0" Grid.RowSpan="5" Grid.ColumnSpan="60" Color="ffffff"/>
+            <drawbase:DrawBox Grid.Row="7" Grid.Column="0" Grid.RowSpan="13" Grid.ColumnSpan="60" Color="ffffff"/>
             <!--타이틀=====================================================================================-->
             <drawbase:DrawImage Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="3" Grid.RowSpan="1"
                                 Icon="TitleIcon.png"/>
@@ -58,7 +58,7 @@
             <!--===========================================================================================-->
 
             <!-- ListView ===========================================================================================-->
-            <drawbase:DrawBox Grid.Row="8" Grid.Column="0" Grid.RowSpan="1" Grid.ColumnSpan="60" Color="3498db"/>
+            <drawbase:DrawBox Grid.Row="8" Grid.Column="0" Grid.RowSpan="1" Grid.ColumnSpan="60" Color="#E30613"/>
             <drawbase:DrawGridHead Grid.Row="8" Grid.Column="0"  Grid.ColumnSpan="10"  Text= "RraSdcType"/>
             <drawbase:DrawGridHead Grid.Row="8" Grid.Column="10"  Grid.ColumnSpan="20"  Text= "ProcessName"/>
             <drawbase:DrawGridHead Grid.Row="8" Grid.Column="30" Grid.ColumnSpan="10"  Text= "LastDate"/>

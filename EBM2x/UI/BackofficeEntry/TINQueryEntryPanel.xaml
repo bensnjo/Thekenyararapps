@@ -7,9 +7,9 @@
     <ContentView.Content>
         <draw:FixedGrid x:Name="entryFixedGrid" ColumnCount="1" RowCount="1">
             <local:AndroidEntry x:Name="entryEntry" Grid.Row="0" Grid.Column="0"
-                    Keyboard="Numeric">
+                    Keyboard="Text">
                 <Entry.Behaviors>
-                    <local:MaskedBehavior Mask="XXXXXXXXX" />
+                    <local:MaskedBehavior Mask="XXXXXXXXXXX" />
                 </Entry.Behaviors>
             </local:AndroidEntry>
         </draw:FixedGrid>

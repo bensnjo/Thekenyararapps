@@ -6,10 +6,10 @@
              x:Class="EBM2x.UI.Backoffice.StockManagement.ProcessingManagementPage">
     <ContentPage.Content>
         <drawbase:BackofficeBaseGrid BackgroundColor="White">
-            <drawbase:DrawBox Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="90" Color="f9b621"/>
+            <drawbase:DrawBox Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="90" Color="#E30613"/>
             <drawbase:DrawBox Grid.Row="2" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="90" Color="BDB76B"/>
-            <drawbase:DrawBox Grid.Row="4" Grid.Column="0" Grid.RowSpan="16" Grid.ColumnSpan="45" Color="ddf3ea"/>
-            <drawbase:DrawBox Grid.Row="4" Grid.Column="45" Grid.RowSpan="16" Grid.ColumnSpan="45" Color="ffffcc"/>
+            <drawbase:DrawBox Grid.Row="4" Grid.Column="0" Grid.RowSpan="16" Grid.ColumnSpan="45" Color="ffffff"/>
+            <drawbase:DrawBox Grid.Row="4" Grid.Column="45" Grid.RowSpan="16" Grid.ColumnSpan="45" Color="ffffff"/>
             <!--타이틀=====================================================================================-->
             <drawbase:DrawImage Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="3" Grid.RowSpan="1"
                                 Icon="TitleIcon.png"/>
@@ -81,7 +81,7 @@
                              x:Name="btnRawEmpty" Text="Empty" FillRate="0.4" Icon="query.png"
                              ButtonClicked="OnRawEmpty"/>
             <!-- ListView ===========================================================================================-->
-            <drawbase:DrawBox Grid.Row="10" Grid.Column="0" Grid.RowSpan="1" Grid.ColumnSpan="45" Color="3498db"/>
+            <drawbase:DrawBox Grid.Row="10" Grid.Column="0" Grid.RowSpan="1" Grid.ColumnSpan="45" Color="#E30613"/>
             <drawbase:DrawGridHead Grid.Row="10" Grid.Column="0"  Grid.ColumnSpan="10" Text= "Item Code"/>
             <drawbase:DrawGridHead Grid.Row="10" Grid.Column="10"  Grid.ColumnSpan="17" Text= "Item Name"/>
             <drawbase:DrawGridHead Grid.Row="10" Grid.Column="27"  Grid.ColumnSpan="6" Text= "Current Stock"/>
@@ -163,7 +163,7 @@
                              ButtonClicked="OnFinishedRemove"/>
 
             <!-- ListView ===========================================================================================-->
-            <drawbase:DrawBox Grid.Row="10"  Grid.Column="45" Grid.RowSpan="1" Grid.ColumnSpan="45" Color="3498db"/>
+            <drawbase:DrawBox Grid.Row="10"  Grid.Column="45" Grid.RowSpan="1" Grid.ColumnSpan="45" Color="#E30613"/>
             <drawbase:DrawGridHead Grid.Row="10" Grid.Column="45"  Grid.ColumnSpan="10" Text= "Item Code"/>
             <drawbase:DrawGridHead Grid.Row="10" Grid.Column="55"  Grid.ColumnSpan="17" Text= "Item Name"/>
             <drawbase:DrawGridHead Grid.Row="10" Grid.Column="72"  Grid.ColumnSpan="6" Text= "Current Stock"/>

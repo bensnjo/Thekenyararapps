@@ -104,8 +104,13 @@ namespace EBM2x.Database.MasterEbm2x
                 itemNode.TaxblAmt = itemNode.SplyAmt - itemNode.DcAmt;
                 if (itemNode.TaxTyCd.Equals("B"))
                 {
-                    double vatRate = 18;
-                    itemNode.TaxAmt = (itemNode.TaxblAmt / 1.18) * (vatRate / 100);
+                    double vatRate = 16;
+                    itemNode.TaxAmt = (itemNode.TaxblAmt / 1.16) * (vatRate / 100);
+                    itemNode.TaxAmt = Math.Round(itemNode.TaxAmt, 2);
+                }else if(itemNode.TaxTyCd.Equals("E"))
+                {
+                    double vatRate = 8;
+                    itemNode.TaxAmt = (itemNode.TaxblAmt / 1.08) * (vatRate / 100);
                     itemNode.TaxAmt = Math.Round(itemNode.TaxAmt, 2);
                 }
                 else
@@ -175,6 +180,13 @@ namespace EBM2x.Database.MasterEbm2x
                     TranRecord.TaxblAmtD += itemRecord.TaxblAmt;      // Taxable Amount D
                     TranRecord.TaxRtD = 0;                            // Tax Rate D
                     TranRecord.TaxAmtD += itemRecord.TaxAmt;          // Tax Amount D
+                }
+
+                else if (itemRecord.TaxTyCd.Equals("E"))
+                {
+                    TranRecord.TaxblAmtE += itemRecord.TaxblAmt;       // Taxable Amount B
+                    TranRecord.TaxRtE = 8;                            // Tax Rate B
+                    TranRecord.TaxAmtE += itemRecord.TaxAmt;
                 }
 
                 TranRecord.TotTaxblAmt += itemRecord.TaxblAmt;        // Total Taxable Amount

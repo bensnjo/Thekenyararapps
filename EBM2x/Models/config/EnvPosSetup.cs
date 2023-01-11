@@ -107,7 +107,7 @@ namespace EBM2x.Models.config
 
             TempletType = "Grocery Store";
             LocationType = "en";
-            OfflineDays = 3;
+            OfflineDays = 365;
             /*Added By Bright 1.5.2022  
              *  OfflineAmount = 100000000;
              */

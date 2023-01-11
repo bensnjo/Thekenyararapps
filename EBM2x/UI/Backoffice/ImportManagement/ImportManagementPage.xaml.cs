@@ -125,8 +125,8 @@ namespace EBM2x.UI.Backoffice.ImportManagement
         protected override void OnAppearing()
         {
             base.OnAppearing();
-
-            if(listImportItemRecord == null || listImportItemRecord.Count <= 0)
+            
+            if (listImportItemRecord == null || listImportItemRecord.Count <= 0)
             {
                 OnSearch();
             }

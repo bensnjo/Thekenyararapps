@@ -11,15 +11,20 @@ testitem
 RW1AMX4BX0000004
 1000x1           1000
 
+RW1AMX4BX0000005
+1000x1           1000
+
 -----------------------------------
 Total                   1000.00
 Total A-EX              0.00
 Total B-18%             1000.00
+Total Tax E             1000.00
 Total Tax B             152.54
-Total Tax               152.54
+Total Tax E             74.07
+Total Tax               226.61
 -----------------------------------
-CASH:                   1000.00
-ITEMS NUMBER:           1
+CASH:                   2000.00
+ITEMS NUMBER:           2
 -----------------------------------
           SDC INFORMATION
 Date :04/03/2019    Time: 16:47:24

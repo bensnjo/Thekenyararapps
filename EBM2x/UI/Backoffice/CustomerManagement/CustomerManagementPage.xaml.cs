@@ -327,10 +327,10 @@ namespace EBM2x.UI.Backoffice.CustomerManagement
                 return;
             }
 
-            if (etTIN.GetEntryValue().Length != 9)
+            if (etTIN.GetEntryValue().Length != 11)
             {
-                EBM2x.UI.UiUtils.MsgBox.DisplayAlert(this, "Error", "Please enter the TIN [9 byte].", "Ok");
-                return;
+                //EBM2x.UI.UiUtils.MsgBox.DisplayAlert(this, "Error", "Please enter the TIN [11 byte].", "Ok");
+                //return;
             }
 
             if (string.IsNullOrEmpty(etName.GetEntryValue()))

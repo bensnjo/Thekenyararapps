@@ -16,7 +16,7 @@
             <draw:IconTextButton Grid.Row="3" Grid.Column="29" Grid.RowSpan="3" Grid.ColumnSpan="3"
                                 Text="Back" FillRate="0.3" ButtonClicked="OnCancelButtonClicked" Icon="back.png"/>
 
-            <draw:DrawBox Grid.Row="6" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="33" Color="3498db"/>
+            <draw:DrawBox Grid.Row="6" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="33" Color="#E30613"/>
             <draw:DrawGridHead Grid.Row="6" Grid.Column="0"  Grid.RowSpan="2" Grid.ColumnSpan="10" Text= "Title"/>
             <draw:DrawGridHead Grid.Row="6" Grid.Column="10"  Grid.RowSpan="2" Grid.ColumnSpan="23" Text= "Cont"/>
             <ListView  x:Name="listView" ItemSelected="OnSelectedItem"

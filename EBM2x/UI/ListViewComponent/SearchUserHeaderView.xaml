@@ -5,7 +5,7 @@
              x:Class="EBM2x.UI.ListViewComponent.SearchUserHeaderView">
     <ContentView.Content>
         <draw:FixedGrid x:Name="fixedGrid" ColumnCount="16" RowCount="2">
-            <draw:DrawBox Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="16" Color="3498db"/>
+            <draw:DrawBox Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="16" Color="#E30613"/>
 
             <draw:DrawText Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="6" 
                            TextColor="fff915" TextAlign="LEFT" FillRate="0.3" Text="User Id"/>

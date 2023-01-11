@@ -6,10 +6,10 @@
              x:Class="EBM2x.UI.Backoffice.SalesManagement.DetailInformationOfSalePage">
     <ContentPage.Content>
         <drawbase:BackofficeBaseGrid BackgroundColor="White">
-            <drawbase:DrawBox Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="90" Color="f9b621"/>
-            <drawbase:DrawBox Grid.Row="2" Grid.Column="0" Grid.RowSpan="18" Grid.ColumnSpan="40" Color="ddf3ea"/>
-            <drawbase:DrawBox Grid.Row="2" Grid.Column="40" Grid.RowSpan="18" Grid.ColumnSpan="50" Color="ffffcc"/>
-            <drawbase:DrawBox Grid.Row="11" Grid.Column="0" Grid.RowSpan="9" Grid.ColumnSpan="90" Color="ffffcc"/>
+            <drawbase:DrawBox Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="90" Color="#E30613"/>
+            <drawbase:DrawBox Grid.Row="2" Grid.Column="0" Grid.RowSpan="18" Grid.ColumnSpan="40" Color="ffffff"/>
+            <drawbase:DrawBox Grid.Row="2" Grid.Column="40" Grid.RowSpan="18" Grid.ColumnSpan="50" Color="ffffff"/>
+            <drawbase:DrawBox Grid.Row="11" Grid.Column="0" Grid.RowSpan="9" Grid.ColumnSpan="90" Color="ffffff"/>
             <!--타이틀=====================================================================================-->
             <drawbase:DrawImage Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="3" Grid.RowSpan="1"
                                 Icon="TitleIcon.png"/>
@@ -208,13 +208,13 @@
                             x:Name="etTotalPrice" BorderColor="LightGray" BackColor="White"/>
 
             <!-- ListView ===========================================================================================-->
-            <drawbase:DrawBox Grid.Row="11" Grid.Column="0" Grid.RowSpan="1" Grid.ColumnSpan="90" Color="3498db"/>
+            <drawbase:DrawBox Grid.Row="11" Grid.Column="0" Grid.RowSpan="1" Grid.ColumnSpan="90" Color="#E30613"/>
             <drawbase:DrawGridHead Grid.Row="11" Grid.Column="0"  Grid.ColumnSpan="10"  Text= "Item Code"/>
             <drawbase:DrawGridHead Grid.Row="11" Grid.Column="10"  Grid.ColumnSpan="10"  Text= "Current Stock"/>
             <drawbase:DrawGridHead Grid.Row="11" Grid.Column="20"  Grid.ColumnSpan="10"  Text= "Unit Price"/>
             <drawbase:DrawGridHead Grid.Row="11" Grid.Column="30" Grid.ColumnSpan="10"  Text= "Sales Qty"/>
             <drawbase:DrawGridHead Grid.Row="11" Grid.Column="40" Grid.ColumnSpan="10"  Text= "Sales Price"/>
-            <drawbase:DrawBox Grid.Row="12" Grid.Column="0" Grid.RowSpan="1" Grid.ColumnSpan="90" Color="3498db"/>
+            <drawbase:DrawBox Grid.Row="12" Grid.Column="0" Grid.RowSpan="1" Grid.ColumnSpan="90" Color="#E30613"/>
             <drawbase:DrawGridHead Grid.Row="12" Grid.Column="0"  Grid.ColumnSpan="20"  Text= "Item Name"/>
             <drawbase:DrawGridHead Grid.Row="12" Grid.Column="20"  Grid.ColumnSpan="10"  Text= "VAT"/>
             <drawbase:DrawGridHead Grid.Row="12" Grid.Column="30" Grid.ColumnSpan="10"  Text= "D/C Amount"/>

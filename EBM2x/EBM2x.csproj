@@ -13,6 +13,7 @@
     <Compile Remove="Process\master\**" />
     <EmbeddedResource Remove="Process\master\**" />
     <None Remove="Process\master\**" />
+    <None Remove="Xamarin.Essentials" />
   </ItemGroup>
 
   <ItemGroup>
@@ -277,10 +278,10 @@
     <PackageReference Include="System.Data.Common" Version="4.3.0" />
     <PackageReference Include="System.Data.SqlClient" Version="4.7.0" />
     <PackageReference Include="Xamarin.Forms" Version="4.3.0.991211" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
     <PackageReference Include="Xamarin.Plugin.FilePicker" Version="2.1.34" />
     <PackageReference Include="ZXing.Net.Mobile" Version="2.4.1" />
     <PackageReference Include="ZXing.Net.Mobile.Forms" Version="2.4.1" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
   </ItemGroup>
 
   <ItemGroup>

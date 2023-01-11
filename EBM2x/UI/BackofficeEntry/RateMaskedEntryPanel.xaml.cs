@@ -45,16 +45,16 @@ namespace EBM2x.UI.BackofficeEntry
                 (sender as Entry).Text = Regex.Replace(e.NewTextValue, "[^0-9,]", string.Empty);
 
             string buffer = (sender as Entry).Text;
-            if (buffer.Length > 2) buffer = buffer.Substring(0, 2);
+            if (buffer.Length > 2) buffer = buffer.Substring(0, 3);
 
             try
             {
                 double inputValue = double.Parse(buffer.Replace(",", ""));
                 buffer = inputValue.ToString("#0");
 
-                if(inputValue > 100)
+                if(inputValue > 1000)
                 {
-                    buffer = buffer.Substring(0, 2);
+                    buffer = buffer.Substring(0, 3);
                 }
 
                 (sender as Entry).Text = buffer;

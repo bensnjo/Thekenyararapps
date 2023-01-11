@@ -6,22 +6,22 @@
              x:Class="EBM2x.UI.Backoffice.CustomerManagement.TaxpayerPopupPage">
     <ContentPage.Content>
         <drawbase:BackofficeBaseGrid BackgroundColor="White">
-            <drawbase:DrawBox Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="90" Color="f9b621"/>
-            <drawbase:DrawBox Grid.Row="2" Grid.Column="60" Grid.RowSpan="18" Grid.ColumnSpan="30" Color="ddf3ea"/>
-            <drawbase:DrawBox Grid.Row="2" Grid.Column="0" Grid.RowSpan="18" Grid.ColumnSpan="60" Color="ffffcc"/>
+            <drawbase:DrawBox Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="90" Color="#E30613"/>
+            <drawbase:DrawBox Grid.Row="2" Grid.Column="60" Grid.RowSpan="18" Grid.ColumnSpan="30" Color="FFFFFF"/>
+            <drawbase:DrawBox Grid.Row="2" Grid.Column="0" Grid.RowSpan="18" Grid.ColumnSpan="60" Color="ffffff"/>
             <!--타이틀=====================================================================================-->
             <drawbase:DrawImage Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="3" Grid.RowSpan="1"
                                 Icon="TitleIcon.png"/>
             <drawbase:DrawText Grid.Column="4" Grid.Row="0" Grid.ColumnSpan="86" Grid.RowSpan="1"
-                               Text="Taxpayer Popup" TextAlign="Left" FillRate="0.5"/>
+                               Text="Taxpayer Popup" TextAlign="Left" FillRate="0.5" TextColor="fff"/>
 
             <!--버튼=======================================================================================-->
             <drawbase:IconTextButton Grid.Column="74" Grid.Row="0" Grid.ColumnSpan="8" Grid.RowSpan="2"
                              x:Name="btnCancel" Text="Cancel" FillRate="0.3" Icon="i_cancel.png"
-                             ButtonClicked="OnFunctionCancel"/>
+                             ButtonClicked="OnFunctionCancel" TextColor="fff" ButtonColor="#ff000000"/>
             <drawbase:IconTextButton Grid.Column="82" Grid.Row="0" Grid.ColumnSpan="8" Grid.RowSpan="2"
-                             x:Name="btnConfirm" Text="Confirm" FillRate="0.3" Icon="confirm.png" ButtonColor="0000CD"
-                             ButtonClicked="OnFunctionConfirm"/>
+                             x:Name="btnConfirm" Text="Confirm" FillRate="0.3" Icon="confirm.png" ButtonColor="#FF000000"
+                             ButtonClicked="OnFunctionConfirm" TextColor="fff"/>
             <!--===========================================================================================-->
 
             <!--Grid Search Bar============================================================================-->
@@ -41,7 +41,7 @@
                              x:Name="btnSearch" Text="Search" FillRate="0.6" Icon="query.png" ButtonColor="4169E1"
                              ButtonClicked="OnSearch"/>
             <!-- ListView ===========================================================================================-->
-            <drawbase:DrawBox Grid.Row="4" Grid.Column="0" Grid.RowSpan="1" Grid.ColumnSpan="60" Color="3498db"/>
+            <drawbase:DrawBox Grid.Row="4" Grid.Column="0" Grid.RowSpan="1" Grid.ColumnSpan="60" Color="#E30613"/>
             <drawbase:DrawGridHead Grid.Row="4" Grid.Column="0"  Grid.ColumnSpan="10"  Text= "  TIN"/>
             <drawbase:DrawGridHead Grid.Row="4" Grid.Column="10"  Grid.ColumnSpan="20"  Text= "  Taxpayer Name"/>
             <drawbase:DrawGridHead Grid.Row="4" Grid.Column="30"  Grid.ColumnSpan="10"  Text= "  Province"/>

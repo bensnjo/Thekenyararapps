@@ -5,7 +5,7 @@
              x:Class="EBM2x.UI.Component.TabletHeaderNonPanel">
     <ContentView.Content>
       <draw:FixedGrid ColumnCount="23" RowCount="2">
-            <draw:DrawBox Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="23" Color="f9b621"/>
+            <draw:DrawBox Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="23" Color="#E30613"/>
 
             <draw:DrawImage x:Name="logoImage"
                               Grid.Row="0" Grid.Column="0" Grid.RowSpan="2"  Grid.ColumnSpan="2"/>

@@ -5,7 +5,7 @@
              x:Class="EBM2x.UI.Component.PaymentHeader">
     <ContentView.Content>
         <draw:FixedGrid ColumnCount="16" RowCount="1">
-            <draw:DrawBox x:Name="drawBox" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="16" Color="3498db"/>
+            <draw:DrawBox x:Name="drawBox" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="16" Color="#E30613"/>
 
             <draw:DrawText Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" TextColor="fff915" TextAlign="CENTER" Text="No"/>
             <draw:DrawText Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="7" TextColor="fff915" Text="Payment"/>
