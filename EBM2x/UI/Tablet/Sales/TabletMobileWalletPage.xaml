@@ -20,14 +20,14 @@
             <draw:DrawText Text="The amount to be receive"
                            Grid.Row="19" Grid.Column="1" Grid.RowSpan="2" Grid.ColumnSpan="9"/>
             <draw:DrawBox StrokeColor="ff1700" IsStroke="false"
-                          Grid.Row="21" Grid.Column="1" Grid.RowSpan="3" Grid.ColumnSpan="9" Color="e3f9d6"/>
+                          Grid.Row="21" Grid.Column="1" Grid.RowSpan="3" Grid.ColumnSpan="9" Color="#fad0cf"/>
             <draw:DrawNumber x:Name="amountToReceive"
                           Grid.Row="21" Grid.Column="1" Grid.RowSpan="3" Grid.ColumnSpan="9"/>
 
             <draw:DrawText Text="Receive"
                            Grid.Row="24" Grid.Column="1" Grid.RowSpan="2" Grid.ColumnSpan="9"/>
             <draw:DrawBox x:Name="payNowBox"  StrokeColor="ff1700" IsStroke="true"
-                          Grid.Row="26" Grid.Column="1" Grid.RowSpan="3" Grid.ColumnSpan="9" Color="e3f9d6"/>
+                          Grid.Row="26" Grid.Column="1" Grid.RowSpan="3" Grid.ColumnSpan="9" Color="#fad0cf"/>
             <draw:DrawNumber x:Name="payNowEntry"
                              Grid.Row="26" Grid.Column="1" Grid.RowSpan="3" Grid.ColumnSpan="9"/>
             <draw:BoxButton Grid.Row="26" Grid.Column="1" Grid.RowSpan="3" Grid.ColumnSpan="9"
@@ -36,7 +36,7 @@
             <draw:DrawText Text="Phone number"
                            Grid.Row="29" Grid.Column="1" Grid.RowSpan="2" Grid.ColumnSpan="9"/>
             <draw:DrawBox x:Name="phoneNumberBox" StrokeColor="ff1700" IsStroke="false"
-                          Grid.Row="31" Grid.Column="1" Grid.RowSpan="3" Grid.ColumnSpan="9" Color="e3f9d6"/>
+                          Grid.Row="31" Grid.Column="1" Grid.RowSpan="3" Grid.ColumnSpan="9" Color="#fad0cf"/>
             <draw:DrawText x:Name="phoneNumberEntry"
                            Grid.Row="31" Grid.Column="1" Grid.RowSpan="3" Grid.ColumnSpan="9"/>
             <draw:BoxButton Grid.Row="31" Grid.Column="1" Grid.RowSpan="3" Grid.ColumnSpan="9"

@@ -8,8 +8,8 @@
       <draw:FixedGrid ColumnCount="23" RowCount="40">
             <component:TabletHeaderExtPanel Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="23"/>
 
-            <!--<component:LogoBackground Icon="kra_icon.png" Color="ffffff" Align="LEFT"  
-                                      Grid.Row="3" Grid.Column="0" Grid.RowSpan="37" Grid.ColumnSpan="15"/>-->
+            <component:LogoBackground Icon="eTIMS_logo.png" Color="ffffff" Align="LEFT"  
+                                      Grid.Row="3" Grid.Column="0" Grid.RowSpan="37" Grid.ColumnSpan="15"/>
 
             <draw:DrawText Grid.Row="23" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="5" 
                            Text="Management|Module" TextAlign="CENTER" FillRate="0.5"/>

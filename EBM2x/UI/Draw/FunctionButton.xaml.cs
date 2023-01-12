@@ -55,7 +55,7 @@ namespace EBM2x.UI.Draw
                                                         propertyName: "ButtonColor",
                                                         returnType: typeof(string),
                                                         declaringType: typeof(FunctionButton),
-                                                        defaultValue: "3f922b",
+                                                        defaultValue: "4e4e4e",
                                                         defaultBindingMode: BindingMode.TwoWay);
 
         public string ButtonPressedColor
@@ -67,7 +67,7 @@ namespace EBM2x.UI.Draw
                                                         propertyName: "ButtonPressedColor",
                                                         returnType: typeof(string),
                                                         declaringType: typeof(FunctionButton),
-                                                        defaultValue: "98e785",
+                                                        defaultValue: "#fad0cf",
                                                         defaultBindingMode: BindingMode.TwoWay);
 
         public string BorderColor
@@ -79,7 +79,7 @@ namespace EBM2x.UI.Draw
                                                         propertyName: "BorderColor",
                                                         returnType: typeof(string),
                                                         declaringType: typeof(FunctionButton),
-                                                        defaultValue: "93bf89",
+                                                        defaultValue: "ffffff",
                                                         defaultBindingMode: BindingMode.TwoWay);
         public string TextColor
         {

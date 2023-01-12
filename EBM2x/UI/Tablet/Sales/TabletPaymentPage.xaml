@@ -20,7 +20,7 @@
           <draw:DrawText Text="The amount to be receive"
                            Grid.Row="19" Grid.Column="1" Grid.RowSpan="2" Grid.ColumnSpan="9"/>
             <draw:DrawBox StrokeColor="ff1700" IsStroke="false"
-                          Grid.Row="21" Grid.Column="1" Grid.RowSpan="3" Grid.ColumnSpan="9" Color="e3f9d6"/>
+                          Grid.Row="21" Grid.Column="1" Grid.RowSpan="3" Grid.ColumnSpan="9" Color="#fad0cf"/>
             <draw:DrawNumber x:Name="amountToReceive"
                           Grid.Row="21" Grid.Column="1" Grid.RowSpan="3" Grid.ColumnSpan="9"/>
 
@@ -72,7 +72,7 @@
                                 ButtonClicked="OnFunctionCalled" FunctionID="ExtMenu"/>
                 <draw:FunctionButton Grid.Row="0" Grid.Column="4" Grid.RowSpan="2" Grid.ColumnSpan="4"  
                                  ButtonClicked="OnFunctionCalled"
-                                 Text="TIN" FunctionID="TIN"/>
+                                 Text="PIN" FunctionID="TIN"/>
                 <draw:FunctionButton Grid.Row="0" Grid.Column="8" Grid.RowSpan="2" Grid.ColumnSpan="4"  
                                  ButtonClicked="OnFunctionCalled"
                                  Text="Cash|Payment" FunctionID="Cash" FillRate="0.3"/>

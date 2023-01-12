@@ -30,12 +30,12 @@
 
             <!--Grid Search Bar============================================================================-->
             <drawbase:DrawText Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="20" Grid.RowSpan="1"
-                            IsStroke="True" StrokeColor="000000" BoxColor="BDB76B"
+                            IsStroke="True" StrokeColor="000000" BoxColor="#E30613"
                             Text="  Customer Code, Customer Name" FillRate="0.4"/>
             <entitybase:ExtendedEntryPanel Grid.Column="20" Grid.Row="3" Grid.ColumnSpan="40" Grid.RowSpan="1"
                             x:Name="etLikeValue" BorderColor="LightGray" BackColor="White" />
             <drawbase:DrawText Grid.Column="60" Grid.Row="3" Grid.ColumnSpan="10" Grid.RowSpan="1"
-                            IsStroke="True" StrokeColor="000000" BoxColor="BDB76B"
+                            IsStroke="True" StrokeColor="000000" BoxColor="#E30613"
                             Text="  Use" FillRate="0.4"/>
             <drawbase:ImageButton Grid.Column="68" Grid.Row="3" Grid.RowSpan="1" Grid.ColumnSpan="2"
                                  ButtonClicked="OnClearUse" Icon="delete.png"/>

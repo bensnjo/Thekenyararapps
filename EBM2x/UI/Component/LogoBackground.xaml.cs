@@ -63,14 +63,14 @@ namespace EBM2x.UI.Component
             {
                 using (var stream = ResourceUtil.GetImageStream(Icon))
                 {
-                //    bitmap = SKBitmap.Decode(stream);
-                //    SKImageInfo info = e.Info;
-                //    if (bitmap.Height > (info.Height * 0.5f))
-                //    {
-                //        SKImageInfo resizeInfo = new SKImageInfo((int)(info.Height * 0.5f), (int)(info.Height * 0.5f), info.ColorType, info.AlphaType, info.ColorSpace);
-                //        bitmap = bitmap.Resize(resizeInfo, SKFilterQuality.Medium);
-                //}
-            }
+                    bitmap = SKBitmap.Decode(stream);
+                    SKImageInfo info = e.Info;
+                    if (bitmap.Height > (info.Height * 0.5f))
+                    {
+                        SKImageInfo resizeInfo = new SKImageInfo((int)(info.Height * 0.5f), (int)(info.Height * 0.5f), info.ColorType, info.AlphaType, info.ColorSpace);
+                        bitmap = bitmap.Resize(resizeInfo, SKFilterQuality.Medium);
+                    }
+                }
             }
 
             PaintSurface(e.Surface.Canvas, e.Info.Width, e.Info.Height, bitmap);

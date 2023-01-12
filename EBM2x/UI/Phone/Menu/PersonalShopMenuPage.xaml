@@ -9,7 +9,7 @@
         <draw:FixedGrid ColumnCount="16" RowCount="30">
             <component:PhoneHeaderPanel Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="16"/>
 
-            <component:LogoBackground Grid.Row="2" Grid.Column="0" Grid.RowSpan="14" Grid.ColumnSpan="16"/>
+            <!--<component:LogoBackground Grid.Row="2" Grid.Column="0" Grid.RowSpan="14" Grid.ColumnSpan="16"/>-->
 
             <component:InformationPanel Grid.Row="16" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="16"/>
             <component:EchoPanel Grid.Row="18" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="16"/>

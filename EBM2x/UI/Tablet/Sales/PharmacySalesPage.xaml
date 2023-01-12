@@ -47,7 +47,7 @@
                                 ButtonClicked="OnFunctionCalled" FunctionID="ExtMenu"/>
                 <draw:FunctionButton Grid.Row="0" Grid.Column="4" Grid.RowSpan="2" Grid.ColumnSpan="4"  
                                  ButtonClicked="OnFunctionCalled"
-                                 Text="TIN" FunctionID="TIN"/>
+                                 Text="PIN" FunctionID="TIN"/>
                 <draw:FunctionButton Grid.Row="0" Grid.Column="8" Grid.RowSpan="2" Grid.ColumnSpan="4"  
                                  ButtonClicked="OnFunctionCalled"
                                  Text="Search|Item" FunctionID="SearchItem" FillRate="0.3"/>
@@ -101,7 +101,7 @@
                                 ButtonClicked="OnFunctionCalled" FunctionID="ExtMenu"/>
                 <draw:FunctionButton Grid.Row="0" Grid.Column="4" Grid.RowSpan="2" Grid.ColumnSpan="4"  
                                  ButtonClicked="OnFunctionCalled"
-                                 Text="TIN" FunctionID="TIN"/>
+                                 Text="PIN" FunctionID="TIN"/>
                 <draw:FunctionButton Grid.Row="0" Grid.Column="8" Grid.RowSpan="2" Grid.ColumnSpan="4"  
                                  ButtonClicked="OnFunctionCalled"
                                  Text="Search|Item" FunctionID="SearchItem" FillRate="0.3"/>

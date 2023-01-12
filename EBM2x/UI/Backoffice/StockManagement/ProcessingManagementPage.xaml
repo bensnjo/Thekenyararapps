@@ -7,7 +7,7 @@
     <ContentPage.Content>
         <drawbase:BackofficeBaseGrid BackgroundColor="White">
             <drawbase:DrawBox Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="90" Color="#E30613"/>
-            <drawbase:DrawBox Grid.Row="2" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="90" Color="BDB76B"/>
+            <drawbase:DrawBox Grid.Row="2" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="90" Color="#E30613"/>
             <drawbase:DrawBox Grid.Row="4" Grid.Column="0" Grid.RowSpan="16" Grid.ColumnSpan="45" Color="ffffff"/>
             <drawbase:DrawBox Grid.Row="4" Grid.Column="45" Grid.RowSpan="16" Grid.ColumnSpan="45" Color="ffffff"/>
             <!--타이틀=====================================================================================-->

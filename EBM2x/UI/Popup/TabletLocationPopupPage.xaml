@@ -16,7 +16,7 @@
             <draw:ImageButton Grid.Row="9" Grid.Column="21" Grid.RowSpan="6" Grid.ColumnSpan="2"
                             ButtonClicked="OnLocationButtonClicked" FunctionID="en"  Icon="en.png"/>
             <draw:ImageButton Grid.Row="15" Grid.Column="21" Grid.RowSpan="6" Grid.ColumnSpan="2"
-                            ButtonClicked="OnLocationButtonClicked" FunctionID="fr" Icon="fr.png"/>
+                            ButtonClicked="OnLocationButtonClicked" FunctionID="fr" Icon="fr.png" IsVisible="false"/>
             <!--draw:ImageButton Grid.Row="21" Grid.Column="21" Grid.RowSpan="6" Grid.ColumnSpan="2"
                             ButtonClicked="OnLocationButtonClicked" FunctionID="ko" Icon="ko.png"/-->
 

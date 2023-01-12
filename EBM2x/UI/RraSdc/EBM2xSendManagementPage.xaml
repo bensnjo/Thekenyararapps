@@ -45,7 +45,7 @@
                              ButtonClicked="OnFunctionReceiveStockMove"/>
 
             <drawbase:IconTextButton Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="15" Grid.RowSpan="2"
-                             x:Name="btnCustomerTin" Text="Tin" FillRate="0.3" Icon="i_close.png"
+                             x:Name="btnCustomerTin" Text="Pin" FillRate="0.3" Icon="i_close.png"
                              ButtonClicked="OnFunctionCustomerTin"/>
 
             <drawbase:IconTextButton Grid.Column="15" Grid.Row="6" Grid.ColumnSpan="15" Grid.RowSpan="2"

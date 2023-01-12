@@ -58,7 +58,7 @@ namespace EBM2x.UI.Draw
                                                         propertyName: "ButtonColor",
                                                         returnType: typeof(string),
                                                         declaringType: typeof(IconTextButton),
-                                                        defaultValue: "62b64e",  // a55e99
+                                                        defaultValue: "000000",  // a55e99
                                                         defaultBindingMode: BindingMode.TwoWay);
 
         public string BorderColor
@@ -70,7 +70,7 @@ namespace EBM2x.UI.Draw
                                                         propertyName: "BorderColor",
                                                         returnType: typeof(string),
                                                         declaringType: typeof(IconTextButton),
-                                                        defaultValue: "a55e00",
+                                                        defaultValue: "FFFFFF",
                                                         defaultBindingMode: BindingMode.TwoWay);
         public string TextColor
         {
@@ -81,7 +81,7 @@ namespace EBM2x.UI.Draw
                                                         propertyName: "TextColor",
                                                         returnType: typeof(string),
                                                         declaringType: typeof(IconTextButton),
-                                                        defaultValue: "FFFF00",
+                                                        defaultValue: "FFFFFF",
                                                         defaultBindingMode: BindingMode.TwoWay);
 
         public string TextAlign
@@ -128,7 +128,7 @@ namespace EBM2x.UI.Draw
                                                         propertyName: "ButtonPressedColor",
                                                         returnType: typeof(string),
                                                         declaringType: typeof(IconTextButton),
-                                                        defaultValue: "98e785",
+                                                        defaultValue: "#fad0cf",
                                                         defaultBindingMode: BindingMode.TwoWay);
         public string ButtonDisabledColor
         {

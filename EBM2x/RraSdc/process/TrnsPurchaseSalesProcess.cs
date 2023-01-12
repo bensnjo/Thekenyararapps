@@ -38,8 +38,7 @@ namespace EBM2x.RraSdc.process
                 lastDtRqst = trnsPurchaseSalesJson.resultDt;
             }
             else
-            {
-
+            { 
                 lastDtRqst = requestResponNode.LastDate;
             }
 
@@ -63,17 +62,18 @@ namespace EBM2x.RraSdc.process
                 try
                 {
                     string url = RraSdcService.EXTERNAL_URL + "/" + RraSdcService.URL_TRNS_PURCHASE_SALES_SEARCH;
+                    
                     // 'TIN' 'BHFID' RequestHeader, 'cmcKey'.
                     //RraSdcService.SetDefaultRequestHeaders(client, "211111113", "00", "43513fbb4e8e49a8851aabd38fa4eb63");
                     RraSdcService.SetDefaultRequestHeaders(client);
 
                     string jsonRequest = JsonConvert.SerializeObject(trnsPurchaseReq);
-                    //Console.WriteLine(jsonRequest);
-                    Console.WriteLine("jsonRequest mfite" + jsonRequest);
+                    //Console.WriteLine(jsonRequest)
                     RraSdcReceiveJsonWriter.WriteTransactionREQ(RraSdcService.URL_TRNS_PURCHASE_SALES_SEARCH, jsonRequest);
                     HttpContent content = new StringContent(jsonRequest, Encoding.UTF8, "application/json");
 
                     HttpResponseMessage response = await client.PostAsync(url, content);
+                    
                     string jsonResponse = response.Content.ReadAsStringAsync().Result;
                     //string jsonResponse = RraSdcReceiveJsonWriter.read("201912131100129515_scc_selectTrnsPurchaseSalesList");
 
@@ -83,7 +83,7 @@ namespace EBM2x.RraSdc.process
                     if (!string.IsNullOrEmpty(jsonResponse))
                     {
                         TrnsPurchaseSalesRes trnsPurchaseSalesRes = JsonConvert.DeserializeObject<TrnsPurchaseSalesRes>(jsonResponse);
-                        Console.WriteLine("if not null" + jsonResponse);
+                        
                         if (trnsPurchaseSalesRes.resultCd.Equals("000"))
                         {
                             RraSdcReceiveJsonWriter.WriteTransactionSCC(RraSdcService.URL_TRNS_PURCHASE_SALES_SEARCH, jsonResponse);

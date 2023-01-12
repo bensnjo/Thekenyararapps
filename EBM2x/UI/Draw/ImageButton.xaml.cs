@@ -56,7 +56,7 @@ namespace EBM2x.UI.Draw
                                                         propertyName: "ButtonPressedColor",
                                                         returnType: typeof(string),
                                                         declaringType: typeof(ImageButton),
-                                                        defaultValue: "98e785",
+                                                        defaultValue: "#fad0cf",
                                                         defaultBindingMode: BindingMode.TwoWay);
 
         public ImageButton()

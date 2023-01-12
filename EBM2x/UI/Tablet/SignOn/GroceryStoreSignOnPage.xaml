@@ -13,20 +13,20 @@
 
             <draw:DrawText Text="User id" Grid.Row="16" Grid.Column="1" Grid.RowSpan="1" Grid.ColumnSpan="13"/>
             <draw:DrawBox x:Name="userIdBox" StrokeColor="ff1700" IsStroke="true"
-                          Grid.Row="17" Grid.Column="1" Grid.RowSpan="3" Grid.ColumnSpan="13" Color="e3f9d6"/>
+                          Grid.Row="17" Grid.Column="1" Grid.RowSpan="3" Grid.ColumnSpan="13" Color="#fad0cf"/>
             <draw:DrawText x:Name="userIdEntry"
                            Grid.Row="17" Grid.Column="1" Grid.RowSpan="3" Grid.ColumnSpan="13"/>
             <draw:BoxButton Grid.Row="17" Grid.Column="1" Grid.RowSpan="3" Grid.ColumnSpan="13"
                             ButtonClicked="OnFunctionCalled" FunctionID="FocueUserId"/>
 
             <draw:DrawText Text="User name" Grid.Row="20" Grid.Column="1" Grid.RowSpan="1" Grid.ColumnSpan="13"/>
-            <draw:DrawBox Grid.Row="21" Grid.Column="1" Grid.RowSpan="3" Grid.ColumnSpan="13" Color="e3f9d6"/>
+            <draw:DrawBox Grid.Row="21" Grid.Column="1" Grid.RowSpan="3" Grid.ColumnSpan="13" Color="#fad0cf"/>
             <draw:DrawText x:Name="userNameEntry"
                            Grid.Row="21" Grid.Column="1" Grid.RowSpan="3" Grid.ColumnSpan="13"/>
 
             <draw:DrawText Text="Password" Grid.Row="24" Grid.Column="1" Grid.RowSpan="1" Grid.ColumnSpan="13"/>
             <draw:DrawBox x:Name="passwordBox" StrokeColor="ff1700" IsStroke="false"
-                          Grid.Row="25" Grid.Column="1" Grid.RowSpan="3" Grid.ColumnSpan="13" Color="e3f9d6"/>
+                          Grid.Row="25" Grid.Column="1" Grid.RowSpan="3" Grid.ColumnSpan="13" Color="#fad0cf"/>
             <draw:DrawText x:Name="passwordEntry"
                            Grid.Row="25" Grid.Column="1" Grid.RowSpan="3" Grid.ColumnSpan="13"/>
             <draw:BoxButton Grid.Row="25" Grid.Column="1" Grid.RowSpan="3" Grid.ColumnSpan="13"

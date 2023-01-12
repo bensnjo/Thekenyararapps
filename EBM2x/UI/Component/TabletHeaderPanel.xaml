@@ -13,7 +13,7 @@
             <draw:DrawBox x:Name="salesTitleBox"
                           Grid.Row="0" Grid.Column="2" Grid.RowSpan="2" Grid.ColumnSpan="4"/>
             <draw:DrawText x:Name="salesTitleText" TextColor="FFFFFF" TextAlign="CENTER" FillRate="0.4"
-                           Grid.Row="0" Grid.Column="2" Grid.RowSpan="2" Grid.ColumnSpan="4"/>
+                           Grid.Row="0" Grid.Column="2" Grid.RowSpan="2" Grid.ColumnSpan="4" BackgroundColor="#000000"/>
             
             <draw:DrawImage Grid.Row="0" Grid.Column="6" Icon="carlendar.png"/>
             <draw:DrawImage Grid.Row="1" Grid.Column="6" Icon="receipt.png"/>

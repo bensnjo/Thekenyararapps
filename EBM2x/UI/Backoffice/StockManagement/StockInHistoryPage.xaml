@@ -29,17 +29,17 @@
 
             <!--Grid Search Bar============================================================================-->
             <drawbase:DrawText Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="10" Grid.RowSpan="1"
-                            IsStroke="True" StrokeColor="000000" BoxColor="BDB76B"
+                            IsStroke="True" StrokeColor="000000" BoxColor="#E30613"
                             Text="  Date" FillRate="0.4"/>
             <entitybase:DatePickerEntryPanel Grid.Column="10" Grid.Row="3" Grid.ColumnSpan="10" Grid.RowSpan="1"
                             x:Name="etFromDate"/>
             <drawbase:DrawText Grid.Column="20" Grid.Row="3" Grid.ColumnSpan="5" Grid.RowSpan="1"
-                            IsStroke="True" StrokeColor="000000" BoxColor="BDB76B"
+                            IsStroke="True" StrokeColor="000000" BoxColor="#E30613"
                             Text="~" FillRate="0.6" TextAlign="CENTER"/>
             <entitybase:DatePickerEntryPanel Grid.Column="25" Grid.Row="3" Grid.ColumnSpan="10" Grid.RowSpan="1"
                             x:Name="etToDate"/>
             <drawbase:DrawText Grid.Column="35" Grid.Row="3" Grid.ColumnSpan="15" Grid.RowSpan="1"
-                            IsStroke="True" StrokeColor="000000" BoxColor="BDB76B"
+                            IsStroke="True" StrokeColor="000000" BoxColor="#E30613"
                             Text="  Item Code or Name, Barcode" FillRate="0.4"/>
             <entitybase:ExtendedEntryPanel Grid.Column="50" Grid.Row="3" Grid.ColumnSpan="30" Grid.RowSpan="1"
                             x:Name="etLikeValue" BorderColor="LightGray" BackColor="White"/>

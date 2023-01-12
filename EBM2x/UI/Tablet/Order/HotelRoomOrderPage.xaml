@@ -46,7 +46,7 @@
                                 Text="Ordered" FunctionID="Ordered"/>
                 <draw:FunctionButton Grid.Row="0" Grid.Column="8" Grid.RowSpan="2" Grid.ColumnSpan="4"  
                                  ButtonClicked="OnFunctionCalled"
-                                 Text="TIN" FunctionID="TIN"/>
+                                 Text="PIN" FunctionID="TIN"/>
                 <!--JINIT_201911, 버튼삭제, Cancel로 대체 draw:FunctionButton Grid.Row="0" Grid.Column="12" Grid.RowSpan="2" Grid.ColumnSpan="4"  
                                  ButtonClicked="OnFunctionCalled"
                                  Text="Arrangement" FunctionID="Arrangement"/-->
@@ -140,7 +140,7 @@
 
                 <draw:FunctionButton Grid.Row="6" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="4"  
                              ButtonClicked="OnFunctionCalled"
-                             Text="TIN" FunctionID="TIN"/>
+                             Text="PIN" FunctionID="TIN"/>
                 <draw:FunctionButton Grid.Row="6" Grid.Column="4" Grid.RowSpan="2" Grid.ColumnSpan="4"/>
                 <draw:FunctionButton Grid.Row="6" Grid.Column="8" Grid.RowSpan="2" Grid.ColumnSpan="4"  
                              ButtonClicked="OnFunctionCalled"

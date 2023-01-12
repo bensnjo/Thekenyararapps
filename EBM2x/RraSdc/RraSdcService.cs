@@ -8,13 +8,18 @@ namespace EBM2x.RraSdc
 {
     public class RraSdcService
     {
-       
+
         //rwanda Local (test)/ if it is test you can replace it with production api
         public static string APPLICATION_NAME = "KENYA TEST LOCAL";
         public static string EXTERNAL_URL = "https://eis-dev-api.kra.go.ke/ebm2ExtApi";
-        public static string INTERNAL_URL = "https://eis-dev-api.kra.go.ke/ebm2ExtApi"; 
+        public static string INTERNAL_URL = "https://eis-dev-api.kra.go.ke/ebm2ExtApi";
         public static string RECEIPT_URL = "https://eis-dev-api.kra.go.ke";
 
+        // local test
+        //public static string APPLICATION_NAME = "KENYA TEST LOCAL";
+        //public static string EXTERNAL_URL = "http://192.168.27.20:8080/ebm2ExtApi";
+        //public static string INTERNAL_URL = "http://192.168.27.20:8080/ebm2ExtApi";
+        //public static string RECEIPT_URL = "http://192.168.27.20:8080";
 
         public static string HEADER_TIN = "tin";
 	    public static string HEADER_BHF_ID = "bhfId";
@@ -65,10 +70,9 @@ namespace EBM2x.RraSdc
         public static bool SetDefaultRequestHeaders(HttpClient client)
         {
             InitInfoVO initInfoVO = EnvRraSdcService.LoadEnvRraSdc();
-            Console.WriteLine("jsonRequest mfite" + initInfoVO.bhfId + initInfoVO.tin);
+           
             if (initInfoVO != null && !string.IsNullOrEmpty(initInfoVO.tin))
-            {
-               
+            { 
                 client.DefaultRequestHeaders.Add(HEADER_TIN, initInfoVO.tin);
                 client.DefaultRequestHeaders.Add(HEADER_BHF_ID, initInfoVO.bhfId);
                 client.DefaultRequestHeaders.Add(HEADER_CMC_KEY, initInfoVO.cmcKey);

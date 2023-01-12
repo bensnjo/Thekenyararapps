@@ -13,10 +13,10 @@
             <draw:DrawBox Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="5" Color="#ff000000"/>
 
             <draw:DrawText Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="5" 
-                           Text="EBM2.1" TextAlign="CENTER" FillRate="0.6" TextColor="ffffff"/>
+                           Text="ETIMS" TextAlign="CENTER" FillRate="0.6" TextColor="ffffff"/>
 
             <draw:DrawText x:Name="textUserName" Grid.Row="0" Grid.Column="6" Grid.RowSpan="3" Grid.ColumnSpan="10" 
-                           Text="EBM2.1 USER" TextAlign="LEFT" FillRate="0.6" TextColor="000000"/>
+                           Text="ETIMS USER" TextAlign="LEFT" FillRate="0.6" TextColor="000000"/>
 
             <draw:DrawDateTime Grid.Row="10" Grid.Column="8" Grid.RowSpan="3" Grid.ColumnSpan="12"/>
 
@@ -45,7 +45,7 @@
             <draw:DrawText x:Name="textWaitImport" Grid.Row="19" Grid.Column="16" Grid.RowSpan="6" Grid.ColumnSpan="4" 
                            Text="0" TextAlign="CENTER" FillRate="0.8" TextColor="000000"/>
 
-            <component:LogoBackground Icon="EBM2x.png" Color="ffffff" Align="RIGHT"  
+            <component:LogoBackground Icon="eTIMS_logo.png" Color="ffffff" Align="RIGHT"  
                                       Grid.Row="30" Grid.Column="20" Grid.RowSpan="15" Grid.ColumnSpan="4"/>
 
             <draw:BoxButton Grid.Row="0" Grid.Column="0" Grid.RowSpan="45" Grid.ColumnSpan="24"

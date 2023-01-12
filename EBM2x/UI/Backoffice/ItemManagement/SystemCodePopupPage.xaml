@@ -26,7 +26,7 @@
 
             <!--Grid Search Bar============================================================================-->
             <drawbase:DrawText Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="20" Grid.RowSpan="1"
-                            IsStroke="True" StrokeColor="000000" BoxColor="BDB76B"
+                            IsStroke="True" StrokeColor="000000" BoxColor="#E30613"
                             Text="  ItemClass Code, ItemClass Name" FillRate="0.4"/>
             <entitybase:ExtendedEntryPanel Grid.Column="20" Grid.Row="3" Grid.ColumnSpan="40" Grid.RowSpan="1"
                             x:Name="etLikeValue" BorderColor="LightGray" BackColor="White" />

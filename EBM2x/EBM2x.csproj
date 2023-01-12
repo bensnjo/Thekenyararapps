@@ -14,6 +14,21 @@
     <EmbeddedResource Remove="Process\master\**" />
     <None Remove="Process\master\**" />
     <None Remove="Xamarin.Essentials" />
+    <None Remove="UI\i18n\rw3 %28copy%29.json" />
+    <None Remove="UI\Resource\rw.json" />
+    <None Remove="UI\Resource\kenya.png" />
+    <None Remove="UI\Resource\kra_iconBlack.png" />
+    <None Remove="UI\Resource\EBM22x.png" />
+    <None Remove="UI\Resource\en2.png" />
+    <None Remove="UI\Resource\kra_icon.png" />
+    <None Remove="UI\Resource\kra_icon72.png" />
+    <None Remove="UI\Resource\EBM2xBlack.png" />
+    <None Remove="UI\Resource\EBM2x-72.png" />
+    <None Remove="UI\Resource\EBM2x.png" />
+    <None Remove="UI\Resource\EBM2x-16.png" />
+    <None Remove="UI\Resource\EBM2x-200.png" />
+    <None Remove="UI\Resource\eTIMS_logo.png" />
+    <None Remove="UI\Resource\EBM2xClient.ico" />
   </ItemGroup>
 
   <ItemGroup>
@@ -77,11 +92,6 @@
     <None Remove="UI\Resource\dividebill.png" />
     <None Remove="UI\Resource\downpage.png" />
     <None Remove="UI\Resource\EBM2x-128.png" />
-    <None Remove="UI\Resource\EBM2x-16.png" />
-    <None Remove="UI\Resource\EBM2x-200.png" />
-    <None Remove="UI\Resource\EBM2x-72.png" />
-    <None Remove="UI\Resource\EBM2x.png" />
-    <None Remove="UI\Resource\EBM2xBlack.png" />
     <None Remove="UI\Resource\en.png" />
     <None Remove="UI\Resource\english512.png" />
     <None Remove="UI\Resource\Environment.png" />
@@ -154,7 +164,7 @@
     <EmbeddedResource Include="UI\i18n\hi.json" />
     <EmbeddedResource Include="UI\i18n\ko.json" />
     <EmbeddedResource Include="UI\i18n\fr.json" />
-    <EmbeddedResource Include="UI\i18n\rw.json" />
+    <EmbeddedResource Include="UI\i18n\rw3.json" />
     <EmbeddedResource Include="UI\PresetImage\empty.png" />
     <EmbeddedResource Include="UI\Resource\add.png" />
     <EmbeddedResource Include="UI\Resource\back.png" />
@@ -195,11 +205,11 @@
     <EmbeddedResource Include="UI\Resource\dividebill.png" />
     <EmbeddedResource Include="UI\Resource\downpage.png" />
     <EmbeddedResource Include="UI\Resource\EBM2x-128.png" />
-    <EmbeddedResource Include="UI\Resource\EBM2x-16.png" />
-    <EmbeddedResource Include="UI\Resource\EBM2x-200.png" />
-    <EmbeddedResource Include="UI\Resource\EBM2x-72.png" />
-    <EmbeddedResource Include="UI\Resource\EBM2x.png" />
-    <EmbeddedResource Include="UI\Resource\EBM2xBlack.png" />
+    <EmbeddedResource Include="UI\Resource\EBM2x-16r.png" />
+    <EmbeddedResource Include="UI\Resource\EBM2x-200r.png" />
+    <EmbeddedResource Include="UI\Resource\EBM2x-72r.png" />
+    <EmbeddedResource Include="UI\Resource\EBM2xr.png" />
+    <EmbeddedResource Include="UI\Resource\EBM2xBlackR.png" />
     <EmbeddedResource Include="UI\Resource\en.png" />
     <EmbeddedResource Include="UI\Resource\english512.png" />
     <EmbeddedResource Include="UI\Resource\Environment.png" />
@@ -264,6 +274,21 @@
     <EmbeddedResource Include="UI\Resource\user.png" />
     <EmbeddedResource Include="UI\Resource\vn.png" />
     <EmbeddedResource Include="UI\Resource\warning.png" />
+    <EmbeddedResource Include="UI\i18n\rw.json" />
+    <EmbeddedResource Include="UI\Resource\rwr.png" />
+    <EmbeddedResource Include="UI\Resource\kenya.png" />
+    <EmbeddedResource Include="UI\Resource\kra_iconBlack.png" />
+    <EmbeddedResource Include="UI\Resource\EBM22x.png" />
+    <EmbeddedResource Include="UI\Resource\en2.png" />
+    <EmbeddedResource Include="UI\Resource\kra_icon.png" />
+    <EmbeddedResource Include="UI\Resource\kra_icon72.png" />
+    <EmbeddedResource Include="UI\Resource\EBM2xBlack.png" />
+    <EmbeddedResource Include="UI\Resource\EBM2x-72.png" />
+    <EmbeddedResource Include="UI\Resource\EBM2x.png" />
+    <EmbeddedResource Include="UI\Resource\EBM2x-16.png" />
+    <EmbeddedResource Include="UI\Resource\EBM2x-200.png" />
+    <EmbeddedResource Include="UI\Resource\eTIMS_logo.png" />
+    <EmbeddedResource Include="UI\Resource\EBM2xClient.ico" />
   </ItemGroup>
 
   <ItemGroup>
