@@ -166,10 +166,10 @@ namespace EBM2x.UI.Backoffice.StockManagement
             journal.Add("", envPosSetup.GblBrcAdr);
             journal.Add("", "TEL: " + envPosSetup.GblBrcTel);
             journal.Add("", "EMAIL: " + envPosSetup.GblBrcEmail);
-            journal.Add("", "TIN: " + envPosSetup.GblTaxIdNo);
+            journal.Add("", "PIN: " + envPosSetup.GblTaxIdNo);
             journal.Add("", "CASHIER: " + UIManager.Instance().UserModel.UserNm + "(" + UIManager.Instance().UserModel.UserId + ")");
             journal.Add("", line);
-            journal.Add("CLIENT TIN: " + stockInOutModel.TranRecord.CustBhfId);
+            journal.Add("CLIENT PIN: " + stockInOutModel.TranRecord.CustBhfId);
             journal.Add("CLIENT NAME: " + "");
             journal.Add("", line);
 

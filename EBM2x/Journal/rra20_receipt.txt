@@ -2,9 +2,9 @@ TEST Taxpayer 31
 Plot No. 203 Kenya Road
 TEL:
 EMAIL:
-TIN:999999999
+PIN:999999999
 -----------------------------------
-CLIENT TIN:0799999999
+CLIENT PIN:0799999999
 -----------------------------------
 
 testitem
@@ -47,9 +47,9 @@ TEST Taxpayer 31
 Plot No. 203 Kenya Road
 TEL:
 EMAIL:
-TIN:999999999
+PIN:999999999
 -----------------------------------
-CLIENT TIN:078999999
+CLIENT PIN:078999999
 -----------------------------------
               REFUND              
 REF. NORMAL RECEIPT#:  6
@@ -93,9 +93,9 @@ TEST Taxpayer 31
 Plot No. 203 Kenya Road
 TEL:
 EMAIL:
-TIN:999999999
+PIN:999999999
 -----------------------------------
-CLIENT TIN:0799999999
+CLIENT PIN:0799999999
 -----------------------------------
 
 testitem
@@ -133,9 +133,9 @@ TEST Taxpayer 31
 Plot No. 203 Kenya Road
 TEL:
 EMAIL:
-TIN:999999999
+PIN:999999999
 -----------------------------------
-CLIENT TIN:0799999999
+CLIENT PIN:0799999999
 -----------------------------------
               REFUND              
 REF. NORMAL RECEIPT#:  8

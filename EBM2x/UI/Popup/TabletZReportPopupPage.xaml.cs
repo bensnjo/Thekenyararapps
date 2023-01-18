@@ -87,7 +87,7 @@ namespace EBM2x.UI.Popup
             journal.Add("", envPosSetup.GblBrcAdr);
             journal.Add("", "TEL: " + envPosSetup.GblBrcTel);
             journal.Add("", "EMAIL: " + envPosSetup.GblBrcEmail);
-            journal.Add("", "TIN: " + envPosSetup.GblTaxIdNo);
+            journal.Add("", "PIN: " + envPosSetup.GblTaxIdNo);
 
             string fromStrText = salesDateEntry.GetDateTime().ToString("dd-MM-yyyy");
             string toStrText = salesDateEntry.GetDateTime().ToString("dd-MM-yyyy");

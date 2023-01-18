@@ -30,11 +30,11 @@
             <draw:FixedGrid ColumnCount="16" RowCount="2"
                             Grid.Row="20" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="10">
 
-                <draw:DrawBox Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="5" Color="51806c"/>
+                <draw:DrawBox Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="5" Color="#E30613"/>
                 <draw:DrawText Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="5" 
                                TextColor="fff915" TextAlign="CENTER" Text="Total :"/>
 
-                <draw:DrawBox Grid.Row="0" Grid.Column="5" Grid.RowSpan="2" Grid.ColumnSpan="11" Color="FFCF17"/>
+                <draw:DrawBox Grid.Row="0" Grid.Column="5" Grid.RowSpan="2" Grid.ColumnSpan="11" Color="#E30613"/>
                 <draw:DrawNumber x:Name="totalAmountNumber" Format="#,##0"
                              Grid.Row="0" Grid.Column="5" Grid.RowSpan="2" Grid.ColumnSpan="10"/>
             </draw:FixedGrid>

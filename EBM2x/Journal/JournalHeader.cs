@@ -33,7 +33,7 @@ namespace EBM2x.Journal
                 posModel.Journal.Add("", envPosSetup.GblBrcAdr);
                 posModel.Journal.Add("", "TEL: " + envPosSetup.GblBrcTel);
                 posModel.Journal.Add("", "EMAIL: " + envPosSetup.GblBrcEmail);
-                posModel.Journal.Add("", "TIN: " + envPosSetup.GblTaxIdNo);
+                posModel.Journal.Add("", "PIN: " + envPosSetup.GblTaxIdNo);
                 posModel.Journal.Add("", "CASHIER: " + posModel.RegiTotal.RegiHeader.UserName + "(" + posModel.RegiTotal.RegiHeader.UserID + ")");
                 posModel.Journal.Add("", line);
             }

@@ -31,47 +31,47 @@ namespace EBM2x.UI.Component
 
             stateNodeList.Add(new StateNode
             {
-                Information = "Please enter a quantity of 5,000RWF",
+                Information = "Please enter a quantity of 5,000 KES",
                 ContentView = itemNode01
             });
             stateNodeList.Add(new StateNode
             {
-                Information = "Please enter a quantity of 2,000RWF",
+                Information = "Please enter a quantity of 2,000 KES",
                 ContentView = itemNode02
             });
             stateNodeList.Add(new StateNode
             {
-                Information = "Please enter a quantity of 1,000RWF",
+                Information = "Please enter a quantity of 1,000 KES",
                 ContentView = itemNode03
             });
             stateNodeList.Add(new StateNode
             {
-                Information = "Please enter a quantity of 500RWF",
+                Information = "Please enter a quantity of 500 KES",
                 ContentView = itemNode04
             });
             stateNodeList.Add(new StateNode
             {
-                Information = "Please enter a quantity of 100RWF",
+                Information = "Please enter a quantity of 100 KES",
                 ContentView = itemNode05
             });
             stateNodeList.Add(new StateNode
             {
-                Information = "Please enter a quantity of 50RWF",
+                Information = "Please enter a quantity of 50 KES",
                 ContentView = itemNode06
             });
             stateNodeList.Add(new StateNode
             {
-                Information = "Please enter a quantity of 20RWF",
+                Information = "Please enter a quantity of 20 KES",
                 ContentView = itemNode07
             });
             stateNodeList.Add(new StateNode
             {
-                Information = "Please enter a quantity of 10RWF",
+                Information = "Please enter a quantity of 10 KES",
                 ContentView = itemNode08
             });
             stateNodeList.Add(new StateNode
             {
-                Information = "Please enter a quantity of 5RWF",
+                Information = "Please enter a quantity of 5 KES",
                 ContentView = itemNode09
             });
 

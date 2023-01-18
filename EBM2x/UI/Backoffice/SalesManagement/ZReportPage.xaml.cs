@@ -120,7 +120,7 @@ namespace EBM2x.UI.Backoffice.SalesManagement
             journal.Add("", envPosSetup.GblBrcAdr);
             journal.Add("", "TEL: " + envPosSetup.GblBrcTel);
             journal.Add("", "EMAIL: " + envPosSetup.GblBrcEmail);
-            journal.Add("", "TIN: " + envPosSetup.GblTaxIdNo);
+            journal.Add("", "PIN: " + envPosSetup.GblTaxIdNo);
 
             string fromStrText = etFromDate.GetEntryValue().ToString("dd-MM-yyyy");
             string toStrText = etToDate.GetEntryValue().ToString("dd-MM-yyyy");

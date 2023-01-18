@@ -31,8 +31,8 @@ namespace EBM2x.UI.EntryPanel
 
         void OnTextChanged(object sender, TextChangedEventArgs e)
         {
-            if (!Regex.IsMatch(e.NewTextValue, "^[0-9]+$", RegexOptions.CultureInvariant))
-                (sender as Entry).Text = Regex.Replace(e.NewTextValue, "[^0-9]", string.Empty);
+            //if (!Regex.IsMatch(e.NewTextValue, "^[0-9]+$", RegexOptions.CultureInvariant))
+            //    (sender as Entry).Text = Regex.Replace(e.NewTextValue, "[^0-9]", string.Empty);
         }
 
         public void TitleInvalidateSurface(string text)

@@ -9,8 +9,8 @@
         <draw:FixedGrid ColumnCount="16" RowCount="30">
             <component:PhoneHeaderPanel Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="16"/>
 
-            <draw:DrawBox Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="16" Color="51806c"/>
-            <draw:DrawText Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="16" TextColor="86de4d" TextAlign="LEFT" 
+            <draw:DrawBox Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="16" Color="#fad0cf"/>
+            <draw:DrawText Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="16" TextColor="#ff000000" TextAlign="LEFT" 
                            Text="Intermediate Deposit" FillRate="0.9"/>
             
             <component:ReadyMoneyPanel x:Name="readyMoneyPanel" 

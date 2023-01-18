@@ -25,7 +25,7 @@
 
                 <entry:CustTypePickerEntryPanel x:Name="entityCustType" Text="Type" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="23"/>
 
-                <entry:TinCodeMaskedEntryPanel x:Name="entityTinCode" Text="TIN Code" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="23"/>
+                <entry:TinCodeMaskedEntryPanel x:Name="entityTinCode" Text="PIN Code" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="23"/>
                 <entry:ExtendedEntryPanel x:Name="entityCustName" Text="Cust Name" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="23"/>
 
                 <entry:ExtendedEntryPanel x:Name="entityPhone" Text="Phone num" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="23"/>

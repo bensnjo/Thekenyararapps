@@ -15,6 +15,15 @@ namespace EBM2x.RraSdc
         public static string INTERNAL_URL = "https://eis-dev-api.kra.go.ke/ebm2ExtApi";
         public static string RECEIPT_URL = "https://eis-dev-api.kra.go.ke";
 
+        //public static string APPLICATION_NAME = "KENYA TEST LOCAL";
+        //public static string EXTERNAL_URL = "https://etims-test-api.kra.go.ke/ebm2ExtApi";
+        //public static string INTERNAL_URL = "https://etims-test-api.kra.go.ke/ebm2ExtApi";
+        //public static string RECEIPT_URL = "https://etims-test-api.kra.go.ke";
+
+
+
+
+
         // local test
         //public static string APPLICATION_NAME = "KENYA TEST LOCAL";
         //public static string EXTERNAL_URL = "http://192.168.27.20:8080/ebm2ExtApi";

@@ -5,11 +5,11 @@
              x:Class="EBM2x.UI.Component.ReadyMoneyHeader">
     <ContentView.Content>
         <draw:FixedGrid ColumnCount="16" RowCount="2">
-            <draw:DrawBox Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="16" Color="51806c"/>
+            <draw:DrawBox Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="16" Color="#E30613"/>
 
-            <draw:DrawText Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="5" TextColor="fff915" TextAlign="RIGHT" Text="Kinds"/>
-            <draw:DrawText Grid.Row="0" Grid.Column="5" Grid.RowSpan="2" Grid.ColumnSpan="4" TextColor="fff915" TextAlign="RIGHT" Text="Quantity"/>
-            <draw:DrawText Grid.Row="0" Grid.Column="9" Grid.RowSpan="2" Grid.ColumnSpan="6" TextColor="fff915" TextAlign="RIGHT" Text="Total"/>
+            <draw:DrawText Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="5" TextColor="ffffff" TextAlign="RIGHT" Text="Kinds"/>
+            <draw:DrawText Grid.Row="0" Grid.Column="5" Grid.RowSpan="2" Grid.ColumnSpan="4" TextColor="ffffff" TextAlign="RIGHT" Text="Quantity"/>
+            <draw:DrawText Grid.Row="0" Grid.Column="9" Grid.RowSpan="2" Grid.ColumnSpan="6" TextColor="ffffff" TextAlign="RIGHT" Text="Total"/>
         </draw:FixedGrid>
     </ContentView.Content>
 </ContentView>

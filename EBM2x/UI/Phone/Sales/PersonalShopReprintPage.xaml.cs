@@ -114,7 +114,7 @@ namespace EBM2x.UI.Phone.Sales
                     {
                         PrintingService printingServiceSMS = new PrintingService();
 
-                        string smsMessage1 = "TIN:" + UIManager.Instance().PosModel.Environment.EnvPosSetup.GblTaxIdNo + "\n";
+                        string smsMessage1 = "PIN:" + UIManager.Instance().PosModel.Environment.EnvPosSetup.GblTaxIdNo + "\n";
                         smsMessage1 += "Amount:" + SelectedTranModel.TranNode.Subtotal.ToString("#,##0.##") + "\n";
                         smsMessage1 += "Receipt num:" + UIManager.Instance().PosModel.Environment.EnvPosSetup.GblSdcSysNum;
                         smsMessage1 += "/" + SelectedTranModel.TranInformation.ReceiptNumber + "\n";

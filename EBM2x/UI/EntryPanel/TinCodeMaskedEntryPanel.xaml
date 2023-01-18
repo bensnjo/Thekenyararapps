@@ -10,9 +10,9 @@
                            TextColor="000000" TextAlign="LEFT" Text="User code"/>
 
             <local:AndroidEntry x:Name="entryEntry" Grid.Row="5" Grid.Column="1" Grid.RowSpan="9" Grid.ColumnSpan="14"
-                    Keyboard="Numeric">
+                    Keyboard="Text">
                 <Entry.Behaviors>
-                    <local:MaskedBehavior Mask="XXXXXXXXX" />
+                    <local:MaskedBehavior Mask="XXXXXXXXXXX" />
                 </Entry.Behaviors>
             </local:AndroidEntry>
         </draw:FixedGrid>

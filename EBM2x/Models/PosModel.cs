@@ -110,7 +110,7 @@ namespace EBM2x.Models
             MessagingCenter.Send<Object, string>(this, "Sales Title Text", SalesTitleText);
 
             //MessagingCenter.Send<Object, string>(this, "Business Day", RegiTotal.RegiHeader.OpenDate);
-            MessagingCenter.Send<Object, string>(this, "Business Day", "TIN: " + UIManager.Instance().PosModel.Environment.EnvPosSetup.GblTaxIdNo);
+            MessagingCenter.Send<Object, string>(this, "Business Day", "PIN: " + UIManager.Instance().PosModel.Environment.EnvPosSetup.GblTaxIdNo);
 
             if (!EnvRraSdcService.IsEnvRraSdc() || !EnvPosSetupService.IsEnvPosSetup())
             {

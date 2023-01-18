@@ -69,7 +69,7 @@ namespace EBM2x.UI.Component
         {
             IsCurrent = isCurrent;
 
-            if(IsCurrent) backgroungBox.InvalidateSurface("FFCF17");
+            if(IsCurrent) backgroungBox.InvalidateSurface("#fad0cf");
             else backgroungBox.InvalidateSurface(BoxColor);
 
             if (itemNode != null)

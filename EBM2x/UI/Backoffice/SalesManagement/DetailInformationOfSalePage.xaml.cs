@@ -1108,12 +1108,12 @@ namespace EBM2x.UI.Backoffice.SalesManagement
             journal.Add("", envPosSetup.GblBrcAdr);
             journal.Add("", "TEL: " + envPosSetup.GblBrcTel);
             journal.Add("", "EMAIL: " + envPosSetup.GblBrcEmail);
-            journal.Add("", "TIN: " + envPosSetup.GblTaxIdNo);
+            journal.Add("", "PIN: " + envPosSetup.GblTaxIdNo);
             journal.Add("", "CASHIER: " + UIManager.Instance().UserModel.UserNm + "(" + UIManager.Instance().UserModel.UserId + ")");
             journal.Add("", line);
             if (!string.IsNullOrEmpty(salesModel.TranRecord.CustTin) && salesModel.TranRecord.CustTin.Length > 2)
             {
-                journal.Add("CLIENT TIN: " + salesModel.TranRecord.CustTin);
+                journal.Add("CLIENT PIN: " + salesModel.TranRecord.CustTin);
                 journal.Add("CLIENT NAME: " + salesModel.TranRecord.CustNm);
                 journal.Add("", line);
             }
@@ -1270,12 +1270,12 @@ namespace EBM2x.UI.Backoffice.SalesManagement
             journal.Add("", envPosSetup.GblBrcAdr);
             journal.Add("", "TEL: " + envPosSetup.GblBrcTel);
             journal.Add("", "EMAIL: " + envPosSetup.GblBrcEmail);
-            journal.Add("", "TIN: " + envPosSetup.GblTaxIdNo);
+            journal.Add("", "PIN: " + envPosSetup.GblTaxIdNo);
             journal.Add("", "CASHIER: " + UIManager.Instance().UserModel.UserNm + "(" + UIManager.Instance().UserModel.UserId + ")");
             journal.Add("", line);
             if (!string.IsNullOrEmpty(salesModel.TranRecord.CustTin) && salesModel.TranRecord.CustTin.Length > 2)
             {
-                journal.Add("CLIENT TIN: " + salesModel.TranRecord.CustTin);
+                journal.Add("CLIENT PIN: " + salesModel.TranRecord.CustTin);
                 journal.Add("CLIENT NAME: " + salesModel.TranRecord.CustNm);
                 journal.Add("", line);
             }
@@ -1632,7 +1632,7 @@ namespace EBM2x.UI.Backoffice.SalesManagement
             journal.Add("", envPosSetup.GblBrcAdr);
             journal.Add("", "TEL: " + envPosSetup.GblBrcTel);
             journal.Add("", "EMAIL: " + envPosSetup.GblBrcEmail);
-            journal.Add("", "TIN: " + envPosSetup.GblTaxIdNo);
+            journal.Add("", "PIN: " + envPosSetup.GblTaxIdNo);
             journal.Add("", "CASHIER: " + UIManager.Instance().UserModel.UserNm + "(" + UIManager.Instance().UserModel.UserId + ")");
 
             return journal;
