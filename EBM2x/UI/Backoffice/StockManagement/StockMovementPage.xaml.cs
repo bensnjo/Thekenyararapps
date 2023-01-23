@@ -211,7 +211,7 @@ namespace EBM2x.UI.Backoffice.StockManagement
 
                 journal.Add(Journal.JournalUtil.lpad(17, "TOTAL") + Journal.JournalUtil.lpad(15, (stockInOutModel.TranRecord.TotAmt)));
                 journal.Add(Journal.JournalUtil.lpad(17, "TOTAL A-EX") + Journal.JournalUtil.lpad(15, (stockInOutModel.TranRecord.TaxblAmtA)));
-                journal.Add(Journal.JournalUtil.lpad(17, "TOTAL B-18%") + Journal.JournalUtil.lpad(15, (stockInOutModel.TranRecord.TaxblAmtB)));
+                journal.Add(Journal.JournalUtil.lpad(17, "TOTAL B-16%") + Journal.JournalUtil.lpad(15, (stockInOutModel.TranRecord.TaxblAmtB)));
                 journal.Add(Journal.JournalUtil.lpad(17, "TOTAL TAX-B") + Journal.JournalUtil.lpad(15, (stockInOutModel.TranRecord.TaxAmtB)));
                 if (UIManager.Instance().PosModel.Environment.EnvPosSetup.NonVAT)
                 {
@@ -269,7 +269,7 @@ namespace EBM2x.UI.Backoffice.StockManagement
 
                 journal.Add(Journal.JournalUtil.lpad(20, "TOTAL") + Journal.JournalUtil.lpad(15, (0)));
                 journal.Add(Journal.JournalUtil.lpad(20, "TOTAL A-EX") + Journal.JournalUtil.lpad(15, (0)));
-                journal.Add(Journal.JournalUtil.lpad(20, "TOTAL B-18%") + Journal.JournalUtil.lpad(15, (0)));
+                journal.Add(Journal.JournalUtil.lpad(20, "TOTAL B-16%") + Journal.JournalUtil.lpad(15, (0)));
                 journal.Add(Journal.JournalUtil.lpad(20, "TOTAL TAX-B") + Journal.JournalUtil.lpad(15, (0)));
                 if (UIManager.Instance().PosModel.Environment.EnvPosSetup.NonVAT)
                 {
@@ -430,7 +430,7 @@ namespace EBM2x.UI.Backoffice.StockManagement
                     taxName = "A-EX ";
                     break;
                 case "B":
-                    taxName = "B-18%";
+                    taxName = "B-16%";
                     break;
                 case "C":
                     taxName = "TAX C";

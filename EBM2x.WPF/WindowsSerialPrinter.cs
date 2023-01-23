@@ -815,7 +815,7 @@ namespace EBM2x.WPF
 
             ev.Graphics.DrawString("Total Rwf", printFont, brush, (cellWidth * 24) + 3, (cellHeight * 45) + 15);
             ev.Graphics.DrawString("Total A-EX Rwf", printFont, brush, (cellWidth * 24) + 3, (cellHeight * 47) + 15);
-            ev.Graphics.DrawString("Total B-18% Rwf", printFont, brush, (cellWidth * 24) + 3, (cellHeight * 49) + 15);
+            ev.Graphics.DrawString("Total B-16% Rwf", printFont, brush, (cellWidth * 24) + 3, (cellHeight * 49) + 15);
             if (UIManager.Instance().PosModel.Environment.EnvPosSetup.NonVAT)
             {
                 ev.Graphics.DrawString("Total D", printFont, brush, (cellWidth * 24) + 3, (cellHeight * 51) + 15);

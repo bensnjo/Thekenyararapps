@@ -1137,7 +1137,7 @@ namespace EBM2x.UI.Backoffice.SalesManagement
 
                 journal.Add(Journal.JournalUtil.lpad(17, "TOTAL") + Journal.JournalUtil.lpad(15, (salesModel.TranRecord.TotAmt * (1))));
                 journal.Add(Journal.JournalUtil.lpad(17, "TOTAL A-EX") + Journal.JournalUtil.lpad(15, (salesModel.TranRecord.TaxblAmtA * (1))));
-                journal.Add(Journal.JournalUtil.lpad(17, "TOTAL B-18%") + Journal.JournalUtil.lpad(15, (salesModel.TranRecord.TaxblAmtB * (1))));
+                journal.Add(Journal.JournalUtil.lpad(17, "TOTAL B-16%") + Journal.JournalUtil.lpad(15, (salesModel.TranRecord.TaxblAmtB * (1))));
                 journal.Add(Journal.JournalUtil.lpad(17, "TOTAL TAX-B") + Journal.JournalUtil.lpad(15, (salesModel.TranRecord.TaxAmtB * (1))));
                 if (UIManager.Instance().PosModel.Environment.EnvPosSetup.NonVAT)
                 {
@@ -1200,7 +1200,7 @@ namespace EBM2x.UI.Backoffice.SalesManagement
 
                 journal.Add("bold", Journal.JournalUtil.lpad(20, "TOTAL") + Journal.JournalUtil.lpad(15, (salesModel.TranRecord.TotAmt * (1))));
                 journal.Add(Journal.JournalUtil.lpad(20, "TOTAL A-EX") + Journal.JournalUtil.lpad(15, (salesModel.TranRecord.TaxblAmtA * (1))));
-                journal.Add(Journal.JournalUtil.lpad(20, "TOTAL B-18%") + Journal.JournalUtil.lpad(15, (salesModel.TranRecord.TaxblAmtB * (1))));
+                journal.Add(Journal.JournalUtil.lpad(20, "TOTAL B-16%") + Journal.JournalUtil.lpad(15, (salesModel.TranRecord.TaxblAmtB * (1))));
                 journal.Add(Journal.JournalUtil.lpad(20, "TOTAL TAX-B") + Journal.JournalUtil.lpad(15, (salesModel.TranRecord.TaxAmtB * (1))));
                 if (UIManager.Instance().PosModel.Environment.EnvPosSetup.NonVAT)
                 {
@@ -1321,7 +1321,7 @@ namespace EBM2x.UI.Backoffice.SalesManagement
                 {
                     journal.Add(Journal.JournalUtil.lpad(17, "TOTAL") + Journal.JournalUtil.lpad(15, (salesModel.TranRecord.TotAmt * (-1))));
                     journal.Add(Journal.JournalUtil.lpad(17, "TOTAL A-EX") + Journal.JournalUtil.lpad(15, (salesModel.TranRecord.TaxblAmtA * (-1))));
-                    journal.Add(Journal.JournalUtil.lpad(17, "TOTAL B-18%") + Journal.JournalUtil.lpad(15, (salesModel.TranRecord.TaxblAmtB * (-1))));
+                    journal.Add(Journal.JournalUtil.lpad(17, "TOTAL B-16%") + Journal.JournalUtil.lpad(15, (salesModel.TranRecord.TaxblAmtB * (-1))));
                     journal.Add(Journal.JournalUtil.lpad(17, "TOTAL TAX-B") + Journal.JournalUtil.lpad(15, (salesModel.TranRecord.TaxAmtB * (-1))));
                     if (UIManager.Instance().PosModel.Environment.EnvPosSetup.NonVAT)
                     {
@@ -1355,7 +1355,7 @@ namespace EBM2x.UI.Backoffice.SalesManagement
                 {
                     journal.Add("bold", Journal.JournalUtil.lpad(20, "TOTAL") + Journal.JournalUtil.lpad(15, (salesModel.TranRecord.TotAmt * (-1))));
                     journal.Add(Journal.JournalUtil.lpad(20, "TOTAL A-EX") + Journal.JournalUtil.lpad(15, (salesModel.TranRecord.TaxblAmtA * (-1))));
-                    journal.Add(Journal.JournalUtil.lpad(20, "TOTAL B-18%") + Journal.JournalUtil.lpad(15, (salesModel.TranRecord.TaxblAmtB * (-1))));
+                    journal.Add(Journal.JournalUtil.lpad(20, "TOTAL B-16%") + Journal.JournalUtil.lpad(15, (salesModel.TranRecord.TaxblAmtB * (-1))));
                     journal.Add(Journal.JournalUtil.lpad(20, "TOTAL TAX-B") + Journal.JournalUtil.lpad(15, (salesModel.TranRecord.TaxAmtB * (-1))));
                     if (UIManager.Instance().PosModel.Environment.EnvPosSetup.NonVAT)
                     {
@@ -1412,7 +1412,7 @@ namespace EBM2x.UI.Backoffice.SalesManagement
                 {
                     journal.Add(Journal.JournalUtil.lpad(17, "TOTAL") + Journal.JournalUtil.lpad(15, (salesModel.TranRecord.TotAmt * (1))));
                     journal.Add(Journal.JournalUtil.lpad(17, "TOTAL A-EX") + Journal.JournalUtil.lpad(15, (salesModel.TranRecord.TaxblAmtA * (1))));
-                    journal.Add(Journal.JournalUtil.lpad(17, "TOTAL B-18%") + Journal.JournalUtil.lpad(15, (salesModel.TranRecord.TaxblAmtB * (1))));
+                    journal.Add(Journal.JournalUtil.lpad(17, "TOTAL B-16%") + Journal.JournalUtil.lpad(15, (salesModel.TranRecord.TaxblAmtB * (1))));
                     journal.Add(Journal.JournalUtil.lpad(17, "TOTAL TAX-B") + Journal.JournalUtil.lpad(15, (salesModel.TranRecord.TaxAmtB * (1))));
                     if (UIManager.Instance().PosModel.Environment.EnvPosSetup.NonVAT)
                     {
@@ -1446,7 +1446,7 @@ namespace EBM2x.UI.Backoffice.SalesManagement
                 {
                     journal.Add("bold", Journal.JournalUtil.lpad(20, "TOTAL") + Journal.JournalUtil.lpad(15, (salesModel.TranRecord.TotAmt * (1))));
                     journal.Add(Journal.JournalUtil.lpad(20, "TOTAL A-EX") + Journal.JournalUtil.lpad(15, (salesModel.TranRecord.TaxblAmtA * (1))));
-                    journal.Add(Journal.JournalUtil.lpad(20, "TOTAL B-18%") + Journal.JournalUtil.lpad(15, (salesModel.TranRecord.TaxblAmtB * (1))));
+                    journal.Add(Journal.JournalUtil.lpad(20, "TOTAL B-16%") + Journal.JournalUtil.lpad(15, (salesModel.TranRecord.TaxblAmtB * (1))));
                     journal.Add(Journal.JournalUtil.lpad(20, "TOTAL TAX-B") + Journal.JournalUtil.lpad(15, (salesModel.TranRecord.TaxAmtB * (1))));
                     if (UIManager.Instance().PosModel.Environment.EnvPosSetup.NonVAT)
                     {
@@ -1788,7 +1788,7 @@ namespace EBM2x.UI.Backoffice.SalesManagement
                     taxName = "A-EX ";
                     break;
                 case "B":
-                    taxName = "B-18%";
+                    taxName = "B-16%";
                     break;
                 case "C":
                     taxName = "TAX C";
