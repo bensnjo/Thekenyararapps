@@ -66,6 +66,9 @@ RW1AMX4BX0000004
 Total                   -1000.00
 Total A-EX              -0.00
 Total B-16%             -1000.00
+Total E-8%              -0.00
+Total C                 -0.00
+Total D                 -0.00
 Total Tax B             -152.54
 Total Tax               -152.54
 -----------------------------------
@@ -103,11 +106,14 @@ RW1AMX4BX0000004
 1000x1           1000
 
 -----------------------------------
-Total                   1000.00
-Total A-EX              0.00
-Total B-16%             1000.00
-Total Tax B             152.54
-Total Tax               152.54
+Total                   -1000.00
+Total A-EX              -0.00
+Total B-16%             -1000.00
+Total E-8%              -0.00
+Total C                 -0.00
+Total D                 -0.00
+Total Tax B             -152.54
+Total Tax               -152.54
 -----------------------------------
 CASH:                   1000.00
 ITEMS NUMBER:           1
@@ -152,6 +158,9 @@ RW1AMX4BX0000004
 Total                   -1000.00
 Total A-EX              -0.00
 Total B-16%             -1000.00
+Total E-8%              -0.00
+Total C                 -0.00
+Total D                 -0.00
 Total Tax B             -152.54
 Total Tax               -152.54
 -----------------------------------

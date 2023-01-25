@@ -148,9 +148,9 @@ namespace EBM2x.UI.Popup
                 EBM2x.UI.UiUtils.MsgBox.DisplayAlert(this, "Error", "Please enter the TIN.", "Ok");
                 return;
             }
-            if (entityTinCode.GetEntryValue().Length != 9)
+            if (entityTinCode.GetEntryValue().Length != 11)
             {
-                EBM2x.UI.UiUtils.MsgBox.DisplayAlert(this, "Error", "Please enter the TIN [9 byte].", "Ok");
+                EBM2x.UI.UiUtils.MsgBox.DisplayAlert(this, "Error", "Please enter the TIN [11 byte].", "Ok");
                 return;
             }
             if (string.IsNullOrEmpty(entityCustName.GetEntryValue()) || entityCustName.GetEntryValue().Length < 3)

@@ -52,7 +52,7 @@ namespace EBM2x.Journal
                     posModel.Journal.Add("", line);
                     
                     posModel.Journal.Add("End of Legal Receipt");
-                    posModel.Journal.Add("Powered by EBM v2");
+                    posModel.Journal.Add("Powered by ETIMS v1");
                     //posModel.Journal.Add("", line2);
                 }
                 else

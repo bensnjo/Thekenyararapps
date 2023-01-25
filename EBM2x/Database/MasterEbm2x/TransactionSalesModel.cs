@@ -129,14 +129,17 @@ namespace EBM2x.Database.MasterEbm2x
             TranRecord.TaxblAmtB = 0;                         // Taxable Amount B
             TranRecord.TaxblAmtC = 0;                         // Taxable Amount C
             TranRecord.TaxblAmtD = 0;                         // Taxable Amount D
+            TranRecord.TaxblAmtE = 0;                         // Taxable Amount E
             TranRecord.TaxRtA = 0;                            // Tax Rate A
             TranRecord.TaxRtB = 0;                            // Tax Rate B
             TranRecord.TaxRtC = 0;                            // Tax Rate C
             TranRecord.TaxRtD = 0;                            // Tax Rate D
+            TranRecord.TaxRtE = 0;                            // Tax Rate E
             TranRecord.TaxAmtA = 0;                           // Tax Amount A
             TranRecord.TaxAmtB = 0;                           // Tax Amount B
             TranRecord.TaxAmtC = 0;                           // Tax Amount C
             TranRecord.TaxAmtD = 0;                           // Tax Amount D
+            TranRecord.TaxAmtE = 0;                           // Tax Amount E
             TranRecord.TotTaxblAmt = 0;                       // Total Taxable Amount
             TranRecord.TotTaxAmt = 0;                         // Total Tax Amount
             TranRecord.TotAmt = 0;                            // Total Amount

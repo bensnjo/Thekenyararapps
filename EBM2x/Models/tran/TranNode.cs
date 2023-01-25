@@ -26,7 +26,8 @@ namespace EBM2x.Models.tran
         public double NetAmount { get; set; }         
         public double TaxFlagBAmount { get; set; }    // JINIT_201911, TAX B-18% 
         public double TaxFlagCAmount { get; set; }    // JINIT_201911, TAX B 
-        public double TaxFlagDAmount { get; set; }    // JINIT_201911, TAX D 
+        public double TaxFlagDAmount { get; set; }    // JINIT_201911, TAX D
+        public double TaxFlagEAmount { get; set; }    // JINIT_201911, TAX E-8% 
 
         public double Receive { get; set; }
         public double Change { get; set; }

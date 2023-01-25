@@ -41,8 +41,8 @@ namespace EBM2x.UI.BackofficeEntry
 
         void OnTextChanged(object sender, TextChangedEventArgs e)
         {
-            if (!Regex.IsMatch(e.NewTextValue, "^[0-9]+$", RegexOptions.CultureInvariant))
-                (sender as Entry).Text = Regex.Replace(e.NewTextValue, "[^0-9]", string.Empty);
+            //if (!Regex.IsMatch(e.NewTextValue, "^[0-9]+$", RegexOptions.CultureInvariant))
+            //    (sender as Entry).Text = Regex.Replace(e.NewTextValue, "[^0-9]", string.Empty);
         }
 
         public Entry GetEntry()
