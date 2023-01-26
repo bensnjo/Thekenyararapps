@@ -87,8 +87,14 @@ namespace EBM2x.Database.MasterEbm2x
                 // 부가세 = 할인적용 공급가(실 공급가) * 부가세율
                 if (itemNode.TaxTyCd.Equals("B"))
                 {
-                    double vatRate = 18;
-                    itemNode.TaxAmt = (itemNode.TaxblAmt / 1.18) * (vatRate / 100);
+                    double vatRate = 16;
+                    itemNode.TaxAmt = (itemNode.TaxblAmt / 1.16) * (vatRate / 100);
+                    itemNode.TaxAmt = Math.Round(itemNode.TaxAmt, 2);
+                }
+                else if(itemNode.TaxTyCd.Equals("E"))
+                {
+                    double vatRate = 8;
+                    itemNode.TaxAmt = (itemNode.TaxblAmt / 1.08) * (vatRate / 100);
                     itemNode.TaxAmt = Math.Round(itemNode.TaxAmt, 2);
                 }
                 else

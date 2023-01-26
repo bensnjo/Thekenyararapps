@@ -165,15 +165,15 @@ namespace EBM2x.Models.tran
                     if (!IsrcAplcbYn.Equals("N"))
                     {
                         TaxFlagBAmount = Total;
-                        double vatRate = 18;
-                        VatAmount = (Total / 1.18) * (vatRate / 100);
+                        double vatRate = 16;
+                        VatAmount = (Total / 1.16) * (vatRate / 100);
                         VatAmount = Math.Round(VatAmount, 2);
                     }
                     else
                     {
                         TaxFlagBAmount = Subtotal;
-                        double vatRate = 18;
-                        VatAmount = (Subtotal / 1.18) * (vatRate / 100);
+                        double vatRate = 16;
+                        VatAmount = (Subtotal / 1.16) * (vatRate / 100);
                         VatAmount = Math.Round(VatAmount, 2);
                     }
                     break;

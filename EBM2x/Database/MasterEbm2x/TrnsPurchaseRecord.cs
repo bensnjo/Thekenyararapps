@@ -36,14 +36,17 @@ namespace EBM2x.Database.Master
         public double TaxblAmtB { get; set; }           // Taxable Amount B
         public double TaxblAmtC { get; set; }           // Taxable Amount C
         public double TaxblAmtD { get; set; }           // Taxable Amount D
+        public double TaxblAmtE { get; set; }           // Taxable Amount E
         public int TaxRtA { get; set; }              // Tax Rate A
         public int TaxRtB { get; set; }              // Tax Rate B
         public int TaxRtC { get; set; }              // Tax Rate C
         public int TaxRtD { get; set; }              // Tax Rate D
+        public int TaxRtE { get; set; }              // Tax Rate E
         public double TaxAmtA { get; set; }             // Tax Amount A
         public double TaxAmtB { get; set; }             // Tax Amount B
         public double TaxAmtC { get; set; }             // Tax Amount C
         public double TaxAmtD { get; set; }             // Tax Amount D
+        public double TaxAmtE { get; set; }             // Tax Amount E
         public double TotTaxblAmt { get; set; }         // Total Taxable Amount
         public double TotTaxAmt { get; set; }           // Total Tax Amount
         public double TotAmt { get; set; }              // Total Amount

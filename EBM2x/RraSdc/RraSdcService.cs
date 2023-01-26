@@ -10,16 +10,21 @@ namespace EBM2x.RraSdc
     {
 
         //rwanda Local (test)/ if it is test you can replace it with production api
-        //public static string APPLICATION_NAME = "KENYA TEST LOCAL";
+        //public static string APPLICATION_NAME = "KENYA DEV LOCAL";
         //public static string EXTERNAL_URL = "https://eis-dev-api.kra.go.ke/ebm2ExtApi";
         //public static string INTERNAL_URL = "https://eis-dev-api.kra.go.ke/ebm2ExtApi";
         //public static string RECEIPT_URL = "https://eis-dev-api.kra.go.ke";
 
-        public static string APPLICATION_NAME = "KENYA TEST LOCAL V5";
+        public static string APPLICATION_NAME = "KENYA TEST LOCAL V0.5";
         public static string EXTERNAL_URL = "https://etims-test-api.kra.go.ke/ebm2ExtApi";
         public static string INTERNAL_URL = "https://etims-test-api.kra.go.ke/ebm2ExtApi";
         public static string RECEIPT_URL = "https://etims-test-api.kra.go.ke";
 
+
+        //public static string APPLICATION_NAME = "KENYA PILOT LOCAL V0.5.0";
+        //public static string EXTERNAL_URL = "https://etims-api-test.kra.go.ke/etims-api";
+        //public static string INTERNAL_URL = "https://etims-api-test.kra.go.ke/etims-api";
+        //public static string RECEIPT_URL = "https://etims-api-test.kra.go.ke";
 
 
 

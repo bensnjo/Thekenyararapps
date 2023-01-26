@@ -21,8 +21,8 @@ namespace EBM2x.UI.BackofficeEntry
             SystemCode = null;
             LocationList = new List<SystemCode>();
             LocationList.Add(new SystemCode() { Id = "en", Name = "English" });
-            LocationList.Add(new SystemCode() { Id = "rw", Name = "Kinyarwanda" });
-            LocationList.Add(new SystemCode() { Id = "fr", Name = "French" });
+            LocationList.Add(new SystemCode() { Id = "rw", Name = "Kiswahili" });
+            //LocationList.Add(new SystemCode() { Id = "fr", Name = "French" });
             entryPicker.ItemDisplayBinding = new Binding("Name");
             entryPicker.ItemsSource = LocationList;
         }

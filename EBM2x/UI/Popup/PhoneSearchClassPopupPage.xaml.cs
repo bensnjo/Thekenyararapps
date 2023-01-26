@@ -16,6 +16,7 @@ namespace EBM2x.UI.Popup
     public partial class PhoneSearchClassPopupPage : ContentPage
     {
         public ObservableCollection<ItemClassRecord> lvCustManagement { get; set; }
+        bool IsSelected = false;
         ItemClassMaster master = null;
         ItemClassRecord record = null;
 
@@ -145,7 +146,16 @@ namespace EBM2x.UI.Popup
 
                     if (list == null || list.Count <= 0)
                     {
+                        //Added by Aime
+                        //IsSelected = true;
+                        SetList(list);
+                        searchEntry.SetEntryValue(record.ItemClsNm);
+
+                        //END
+                        /*
+                         * Commented By Bright when Incorporating Aime Code
                         EBM2x.UI.UiUtils.MsgBox.DisplayAlert(this, "Info", "There are no results for the query. Please try again.", "OK");
+                        */
                     }
                     else
                     {
@@ -162,7 +172,9 @@ namespace EBM2x.UI.Popup
 
                     if (list == null || list.Count <= 0)
                     {
-                        EBM2x.UI.UiUtils.MsgBox.DisplayAlert(this, "Info", "There are no results for the query. Please try again.", "OK");
+                        SetList(list);
+                        searchEntry.SetEntryValue(record.ItemClsNm);
+                        //EBM2x.UI.UiUtils.MsgBox.DisplayAlert(this, "Info", "There are no results for the query. Please try again.", "OK");
                     }
                     else
                     {
@@ -183,5 +195,7 @@ namespace EBM2x.UI.Popup
         {
             return true; // false: BackButton 작동, true: BackButton 작동 중지
         }
+
+
     }
 }
