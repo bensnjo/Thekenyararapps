@@ -172,7 +172,13 @@ namespace EBM2x.Database.MasterEbm2x
                 else if (itemRecord.TaxTyCd.Equals("B"))
                 {
                     TranRecord.TaxblAmtB += itemRecord.TaxblAmt;       // Taxable Amount B
-                    TranRecord.TaxRtB = 18;                            // Tax Rate B
+                    TranRecord.TaxRtB = 16;                            // Tax Rate B
+                    TranRecord.TaxAmtB += itemRecord.TaxAmt;           // Tax Amount B
+                }
+                else if (itemRecord.TaxTyCd.Equals("E"))
+                {
+                    TranRecord.TaxblAmtB += itemRecord.TaxblAmt;       // Taxable Amount B
+                    TranRecord.TaxRtB = 8;                            // Tax Rate B
                     TranRecord.TaxAmtB += itemRecord.TaxAmt;           // Tax Amount B
                 }
                 else if (itemRecord.TaxTyCd.Equals("C"))

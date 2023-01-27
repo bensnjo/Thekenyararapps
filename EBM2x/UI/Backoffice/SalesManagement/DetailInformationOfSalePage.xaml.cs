@@ -499,7 +499,9 @@ namespace EBM2x.UI.Backoffice.SalesManagement
             receiptSignature.DblSpcpcA = SalesModel.TranRecord.TaxblAmtA;
             receiptSignature.DblVatA = SalesModel.TranRecord.TaxAmtA;
             receiptSignature.DblSpcpcB = SalesModel.TranRecord.TaxblAmtB;
+            receiptSignature.DblSpcpcE = SalesModel.TranRecord.TaxblAmtE;
             receiptSignature.DblVatB = SalesModel.TranRecord.TaxAmtB;
+            receiptSignature.DblVatE = SalesModel.TranRecord.TaxAmtE;
             receiptSignature.DblSpcpcC = SalesModel.TranRecord.TaxblAmtC;
             receiptSignature.DblVatC = SalesModel.TranRecord.TaxAmtC;
             receiptSignature.GblSdcSysNum = UIManager.Instance().PosModel.Environment.EnvPosSetup.GblSdcSysNum;
@@ -934,6 +936,8 @@ namespace EBM2x.UI.Backoffice.SalesManagement
             receiptSignature.DblVatA = SalesModel.TranRecord.TaxAmtA;
             receiptSignature.DblSpcpcB = SalesModel.TranRecord.TaxblAmtB;
             receiptSignature.DblVatB = SalesModel.TranRecord.TaxAmtB;
+            receiptSignature.DblSpcpcE = SalesModel.TranRecord.TaxblAmtE;
+            receiptSignature.DblVatE = SalesModel.TranRecord.TaxAmtE;
             receiptSignature.DblSpcpcC = SalesModel.TranRecord.TaxblAmtC;
             receiptSignature.DblVatC = SalesModel.TranRecord.TaxAmtC;
             receiptSignature.GblSdcSysNum = UIManager.Instance().PosModel.Environment.EnvPosSetup.GblSdcSysNum;
@@ -1139,6 +1143,8 @@ namespace EBM2x.UI.Backoffice.SalesManagement
                 journal.Add(Journal.JournalUtil.lpad(17, "TOTAL A-EX") + Journal.JournalUtil.lpad(15, (salesModel.TranRecord.TaxblAmtA * (1))));
                 journal.Add(Journal.JournalUtil.lpad(17, "TOTAL B-16%") + Journal.JournalUtil.lpad(15, (salesModel.TranRecord.TaxblAmtB * (1))));
                 journal.Add(Journal.JournalUtil.lpad(17, "TOTAL TAX-B") + Journal.JournalUtil.lpad(15, (salesModel.TranRecord.TaxAmtB * (1))));
+                journal.Add(Journal.JournalUtil.lpad(17, "TOTAL E-8%") + Journal.JournalUtil.lpad(15, (salesModel.TranRecord.TaxblAmtE * (1))));
+                journal.Add(Journal.JournalUtil.lpad(17, "TOTAL TAX-E") + Journal.JournalUtil.lpad(15, (salesModel.TranRecord.TaxAmtE * (1))));
                 if (UIManager.Instance().PosModel.Environment.EnvPosSetup.NonVAT)
                 {
                     journal.Add(Journal.JournalUtil.lpad(17, "TOTAL D") + Journal.JournalUtil.lpad(15, (salesModel.TranRecord.TaxblAmtD * (1))));
@@ -1202,6 +1208,8 @@ namespace EBM2x.UI.Backoffice.SalesManagement
                 journal.Add(Journal.JournalUtil.lpad(20, "TOTAL A-EX") + Journal.JournalUtil.lpad(15, (salesModel.TranRecord.TaxblAmtA * (1))));
                 journal.Add(Journal.JournalUtil.lpad(20, "TOTAL B-16%") + Journal.JournalUtil.lpad(15, (salesModel.TranRecord.TaxblAmtB * (1))));
                 journal.Add(Journal.JournalUtil.lpad(20, "TOTAL TAX-B") + Journal.JournalUtil.lpad(15, (salesModel.TranRecord.TaxAmtB * (1))));
+                journal.Add(Journal.JournalUtil.lpad(20, "TOTAL E-8%") + Journal.JournalUtil.lpad(15, (salesModel.TranRecord.TaxblAmtE * (1))));
+                journal.Add(Journal.JournalUtil.lpad(20, "TOTAL TAX-E") + Journal.JournalUtil.lpad(15, (salesModel.TranRecord.TaxAmtE * (1))));
                 if (UIManager.Instance().PosModel.Environment.EnvPosSetup.NonVAT)
                 {
                     journal.Add(Journal.JournalUtil.lpad(20, "TOTAL D") + Journal.JournalUtil.lpad(15, (salesModel.TranRecord.TaxblAmtD * (1))));
@@ -1795,6 +1803,9 @@ namespace EBM2x.UI.Backoffice.SalesManagement
                     break;
                 case "D":
                     taxName = "TAX D";
+                    break;
+                case "E":
+                    taxName = "E-8%";
                     break;
                 default:
                     break;

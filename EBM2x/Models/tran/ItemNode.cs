@@ -177,6 +177,22 @@ namespace EBM2x.Models.tran
                         VatAmount = Math.Round(VatAmount, 2);
                     }
                     break;
+                case "E": // TAX B-18.00%
+                    if (!IsrcAplcbYn.Equals("N"))
+                    {
+                        TaxFlagBAmount = Total;
+                        double vatRate = 8;
+                        VatAmount = (Total / 1.08) * (vatRate / 100);
+                        VatAmount = Math.Round(VatAmount, 2);
+                    }
+                    else
+                    {
+                        TaxFlagBAmount = Subtotal;
+                        double vatRate = 8;
+                        VatAmount = (Subtotal / 1.08) * (vatRate / 100);
+                        VatAmount = Math.Round(VatAmount, 2);
+                    }
+                    break;
                 case "C": // TAX B
                     TaxFlagCAmount = Subtotal;
                     break;

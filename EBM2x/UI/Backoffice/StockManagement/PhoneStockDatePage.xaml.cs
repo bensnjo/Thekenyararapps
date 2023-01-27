@@ -256,6 +256,9 @@ namespace EBM2x.UI.Backoffice.StockManagement
                 case "D":
                     taxName = "TAX D";
                     break;
+                case "E":
+                    taxName = "E-8%";
+                    break;
                 default:
                     break;
             }

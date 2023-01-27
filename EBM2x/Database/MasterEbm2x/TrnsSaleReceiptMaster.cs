@@ -405,7 +405,7 @@ namespace EBM2x.Database.Master
             data += receiptSignature.Tin;
             data += receiptSignature.CustTin;
             data += receiptSignature.GblMrcSysCod;                     // data = data & Rowary(0) & sdc_client_tin(strTinCd) & GblMrcSysCod
-            data += sdc_run_nb(receiptSignature.InvID, 10) + "18,00";  // data = data & sdc_run_nb(Val(strInvID.Trim()), 10) & "18,00"
+            data += sdc_run_nb(receiptSignature.InvID, 10) + "16,00";  // data = data & sdc_run_nb(Val(strInvID.Trim()), 10) & "18,00"
 
             return data;
         }
@@ -432,7 +432,9 @@ namespace EBM2x.Database.Master
         public double DblSpcpcA { get; set; }
         public double DblVatA { get; set; }
         public double DblSpcpcB { get; set; }
+        public double DblSpcpcE { get; set; }
         public double DblVatB { get; set; }
+        public double DblVatE { get; set; }
         public double DblSpcpcC { get; set; }
         public double DblVatC { get; set; }
 
