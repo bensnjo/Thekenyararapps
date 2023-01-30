@@ -29,6 +29,13 @@
     <None Remove="UI\Resource\EBM2x-200.png" />
     <None Remove="UI\Resource\eTIMS_logo.png" />
     <None Remove="UI\Resource\EBM2xClient.ico" />
+    <None Remove="UI\Resource\Backoffice\CustomerManagement.png" />
+    <None Remove="UI\Resource\Backoffice\Environment.png" />
+    <None Remove="UI\Resource\Backoffice\ImportManagement.png" />
+    <None Remove="UI\Resource\Backoffice\ItemManagement.png" />
+    <None Remove="UI\Resource\Backoffice\PurchaseManagement.png" />
+    <None Remove="UI\Resource\Backoffice\SalesManagement.png" />
+    <None Remove="UI\Resource\Backoffice\StockManagement.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -62,16 +69,9 @@
     <None Remove="UI\Resource\Backoffice\checkboxOff.png" />
     <None Remove="UI\Resource\Backoffice\checkboxOn.png" />
     <None Remove="UI\Resource\Backoffice\Circle.png" />
-    <None Remove="UI\Resource\Backoffice\CustomerManagement.png" />
-    <None Remove="UI\Resource\Backoffice\Environment.png" />
-    <None Remove="UI\Resource\Backoffice\ImportManagement.png" />
-    <None Remove="UI\Resource\Backoffice\ItemManagement.png" />
     <None Remove="UI\Resource\Backoffice\Photo.png" />
     <None Remove="UI\Resource\Backoffice\PopupBackBoard.png" />
-    <None Remove="UI\Resource\Backoffice\PurchaseManagement.png" />
-    <None Remove="UI\Resource\Backoffice\SalesManagement.png" />
     <None Remove="UI\Resource\Backoffice\Search.png" />
-    <None Remove="UI\Resource\Backoffice\StockManagement.png" />
     <None Remove="UI\Resource\Backoffice\TitleIcon.png" />
     <None Remove="UI\Resource\calculator.png" />
     <None Remove="UI\Resource\cancel.png" />
@@ -175,16 +175,14 @@
     <EmbeddedResource Include="UI\Resource\Backoffice\checkboxOff.png" />
     <EmbeddedResource Include="UI\Resource\Backoffice\checkboxOn.png" />
     <EmbeddedResource Include="UI\Resource\Backoffice\Circle.png" />
-    <EmbeddedResource Include="UI\Resource\Backoffice\CustomerManagement.png" />
-    <EmbeddedResource Include="UI\Resource\Backoffice\Environment.png" />
-    <EmbeddedResource Include="UI\Resource\Backoffice\ImportManagement.png" />
-    <EmbeddedResource Include="UI\Resource\Backoffice\ItemManagement.png" />
+    <EmbeddedResource Include="UI\Resource\Backoffice\ImportManagementr.png" />
+    <EmbeddedResource Include="UI\Resource\Backoffice\ItemManagementr.png" />
     <EmbeddedResource Include="UI\Resource\Backoffice\Photo.png" />
     <EmbeddedResource Include="UI\Resource\Backoffice\PopupBackBoard.png" />
-    <EmbeddedResource Include="UI\Resource\Backoffice\PurchaseManagement.png" />
-    <EmbeddedResource Include="UI\Resource\Backoffice\SalesManagement.png" />
+    <EmbeddedResource Include="UI\Resource\Backoffice\PurchaseManagementr.png" />
+    <EmbeddedResource Include="UI\Resource\Backoffice\SalesManagementr.png" />
     <EmbeddedResource Include="UI\Resource\Backoffice\Search.png" />
-    <EmbeddedResource Include="UI\Resource\Backoffice\StockManagement.png" />
+    <EmbeddedResource Include="UI\Resource\Backoffice\StockManagementr.png" />
     <EmbeddedResource Include="UI\Resource\Backoffice\TitleIcon.png" />
     <EmbeddedResource Include="UI\Resource\calculator.png" />
     <EmbeddedResource Include="UI\Resource\cancel.png" />
@@ -289,6 +287,13 @@
     <EmbeddedResource Include="UI\Resource\EBM2x-200.png" />
     <EmbeddedResource Include="UI\Resource\eTIMS_logo.png" />
     <EmbeddedResource Include="UI\Resource\EBM2xClient.ico" />
+    <EmbeddedResource Include="UI\Resource\Backoffice\CustomerManagement.png" />
+    <EmbeddedResource Include="UI\Resource\Backoffice\Environment.png" />
+    <EmbeddedResource Include="UI\Resource\Backoffice\ImportManagement.png" />
+    <EmbeddedResource Include="UI\Resource\Backoffice\ItemManagement.png" />
+    <EmbeddedResource Include="UI\Resource\Backoffice\PurchaseManagement.png" />
+    <EmbeddedResource Include="UI\Resource\Backoffice\SalesManagement.png" />
+    <EmbeddedResource Include="UI\Resource\Backoffice\StockManagement.png" />
   </ItemGroup>
 
   <ItemGroup>

@@ -145,12 +145,12 @@ namespace EBM2x.UI.Popup
             }
             if (string.IsNullOrEmpty(entityTinCode.GetEntryValue()) || entityTinCode.GetEntryValue().Length < 5)
             {
-                EBM2x.UI.UiUtils.MsgBox.DisplayAlert(this, "Error", "Please enter the TIN.", "Ok");
+                EBM2x.UI.UiUtils.MsgBox.DisplayAlert(this, "Error", "Please enter the PIN.", "Ok");
                 return;
             }
             if (entityTinCode.GetEntryValue().Length != 11)
             {
-                EBM2x.UI.UiUtils.MsgBox.DisplayAlert(this, "Error", "Please enter the TIN [11 byte].", "Ok");
+                EBM2x.UI.UiUtils.MsgBox.DisplayAlert(this, "Error", "Please enter the PIN [11 byte].", "Ok");
                 return;
             }
             if (string.IsNullOrEmpty(entityCustName.GetEntryValue()) || entityCustName.GetEntryValue().Length < 3)

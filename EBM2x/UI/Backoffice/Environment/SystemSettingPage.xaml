@@ -119,7 +119,7 @@
 
             <drawbase:DrawText Grid.Column="45" Grid.Row="9" Grid.ColumnSpan="20" Grid.RowSpan="1"
                             IsStroke="True" StrokeColor="000000" BoxColor="95a8b6"
-                            Text="  TIN Number" FillRate="0.4"/>
+                            Text="  PIN Number" FillRate="0.4"/>
             <entitybase:ExtendedEntryPanel Grid.Column="65" Grid.Row="9" Grid.ColumnSpan="25" Grid.RowSpan="1"
                             x:Name="etTINNumber" BorderColor="LightGray" BackColor="White" />
             <drawbase:DrawText Grid.Column="45" Grid.Row="10" Grid.ColumnSpan="20" Grid.RowSpan="1"

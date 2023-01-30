@@ -1,4 +1,6 @@
-﻿using EBM2x.RraSdc;
+﻿using EBM2x.Datafile.env;
+using EBM2x.RraSdc;
+using EBM2x.RraSdc.model;
 using Newtonsoft.Json;
 using System;
 using System.IO;
@@ -594,20 +596,40 @@ strDate.Substring(12, 2);
             return true;
         }
 
-        // JINIT_관리자 암호 
+        // changed by clinton 
         public static string getAdminPass()
         {
+            //string toDay = System.DateTime.Now.ToString("ddMMyyyy");
+            //string mm = toDay.Substring(2, 2);
+            //string dd = toDay.Substring(0, 2);
+            //int temp = (int.Parse(dd) * int.Parse(mm)) % 10;
+            //string AdminPass = dd + mm + temp.ToString();
+
+            InitInfoVO initInfoVO = EnvRraSdcService.LoadEnvRraSdc(); //add by clinton
+            string mrcno = initInfoVO.mrcNo;
+            string last3 = mrcno.Substring(mrcno.Length - 3);
             string toDay = System.DateTime.Now.ToString("ddMMyyyy");
             string mm = toDay.Substring(2, 2);
             string dd = toDay.Substring(0, 2);
             int temp = (int.Parse(dd) * int.Parse(mm)) % 10;
-            string AdminPass = dd + mm + temp.ToString();
+            string AdminPass = last3 + dd + mm + temp.ToString();
+
+
 
             return AdminPass;
         }
         public static string getAdminPassII()
         {
-            return "3456";
+            InitInfoVO initInfoVO = EnvRraSdcService.LoadEnvRraSdc();
+            string mrcno = initInfoVO.mrcNo;
+            string last3 = mrcno.Substring(mrcno.Length - 3);
+            string toDay = System.DateTime.Now.ToString("ddMMyyyy");
+            string mm = toDay.Substring(2, 2);
+            string dd = toDay.Substring(0, 2);
+            int temp = (int.Parse(dd) * int.Parse(mm)) % 10;
+            string AdminPass = last3 + dd + mm + temp.ToString();
+
+            return AdminPass;
         }
 
         //===============================================================================

@@ -6,6 +6,7 @@ using EBM2x.UI;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
@@ -35,11 +36,23 @@ namespace EBM2x.RraSdc.process
             string lastDtRqst = null;
             if (trnsPurchaseSalesJson != null)
             {
-                lastDtRqst = trnsPurchaseSalesJson.resultDt;
+                //lastDtRqst = trnsPurchaseSalesJson.resultDt;
+                string input = requestResponNode.LastDate;
+                DateTime date = DateTime.ParseExact(input, "yyyyMMddHHmmss", CultureInfo.InvariantCulture);
+                DateTime newDate = date.AddDays(-5);
+                string result = newDate.ToString("yyyyMMddHHmmss");
+                lastDtRqst = result;
+                Console.WriteLine("murife date1" + result);
             }
             else
-            { 
-                lastDtRqst = requestResponNode.LastDate;
+            {
+                string input = requestResponNode.LastDate;
+                DateTime date = DateTime.ParseExact(input, "yyyyMMddHHmmss", CultureInfo.InvariantCulture);
+                DateTime newDate = date.AddDays(-5);
+                string result = newDate.ToString("yyyyMMddHHmmss");
+                lastDtRqst = result;
+                Console.WriteLine("murife date2" + result);
+                //lastDtRqst = requestResponNode.LastDate;
             }
 
 

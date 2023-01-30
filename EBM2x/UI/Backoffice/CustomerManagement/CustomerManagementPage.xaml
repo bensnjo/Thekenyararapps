@@ -57,7 +57,7 @@
             <!--Data Line 2-->
             <drawbase:DrawText Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="10" Grid.RowSpan="1"
                             IsStroke="True" StrokeColor="000000" BoxColor="95a8b6"
-                            Text="  TIN" FillRate="0.4"/>
+                            Text="  PIN" FillRate="0.4"/>
             <entitybase:TINQueryEntryPanel Grid.Column="10" Grid.Row="4" Grid.ColumnSpan="20" Grid.RowSpan="1"
                             x:Name="etTIN" BorderColor="LightGray" BackColor="White"/>
             <drawbase:ImageButton Grid.Column="28" Grid.Row="4" Grid.RowSpan="1" Grid.ColumnSpan="2"

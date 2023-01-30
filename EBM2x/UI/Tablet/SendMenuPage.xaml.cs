@@ -106,7 +106,7 @@ namespace EBM2x.UI.Tablet
                         if (amount > UIManager.Instance().PosModel.Environment.EnvPosSetup.OfflineAmount)
                         {
                             // EBM2x.UI.UiUtils.MsgBox.DisplayAlert(this, "Confirm", "Check the amount of failed transfers. [" + amount + "]", "Ok");
-                            EBM2x.UI.UiUtils.MsgBox.DisplayAlert(this, "Confirm", "Your Invoices was not reported to RRA because your computer is not connected to internet. Please reconnect it and wait for synchronization to complete.", "Ok");
+                            EBM2x.UI.UiUtils.MsgBox.DisplayAlert(this, "Confirm", "Your Invoices was not reported to KRA because your computer is not connected to internet. Please reconnect it and wait for synchronization to complete.", "Ok");
                         }
                         else
                         {

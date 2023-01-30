@@ -27,7 +27,7 @@
             <!--Grid Search Bar============================================================================-->
             <drawbase:DrawText Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="20" Grid.RowSpan="1"
                             IsStroke="True" StrokeColor="000000" BoxColor="#E30613"
-                            Text="  TIN, Taxpayer Name" FillRate="0.4"/>
+                            Text="  PIN, Taxpayer Name" FillRate="0.4"/>
             <entitybase:ExtendedEntryPanel Grid.Column="20" Grid.Row="3" Grid.ColumnSpan="40" Grid.RowSpan="1"
                             x:Name="etLikeValue" BorderColor="LightGray" BackColor="White" />
             <drawbase:DrawText Grid.Column="60" Grid.Row="3" Grid.ColumnSpan="10" Grid.RowSpan="1"
@@ -42,7 +42,7 @@
                              ButtonClicked="OnSearch"/>
             <!-- ListView ===========================================================================================-->
             <drawbase:DrawBox Grid.Row="4" Grid.Column="0" Grid.RowSpan="1" Grid.ColumnSpan="60" Color="#E30613"/>
-            <drawbase:DrawGridHead Grid.Row="4" Grid.Column="0"  Grid.ColumnSpan="10"  Text= "  TIN"/>
+            <drawbase:DrawGridHead Grid.Row="4" Grid.Column="0"  Grid.ColumnSpan="10"  Text= "  PIN"/>
             <drawbase:DrawGridHead Grid.Row="4" Grid.Column="10"  Grid.ColumnSpan="20"  Text= "  Taxpayer Name"/>
             <drawbase:DrawGridHead Grid.Row="4" Grid.Column="30"  Grid.ColumnSpan="10"  Text= "  Province"/>
             <drawbase:DrawGridHead Grid.Row="4" Grid.Column="40"  Grid.ColumnSpan="20"  Text= "  Address"/>
@@ -70,7 +70,7 @@
 
             <drawbase:DrawText Grid.Column="60" Grid.Row="5" Grid.ColumnSpan="10" Grid.RowSpan="1"
                             IsStroke="True" StrokeColor="000000" BoxColor="95a8b6"
-                            Text="  TIN" FillRate="0.4"/>
+                            Text="  PIN" FillRate="0.4"/>
             <entitybase:ExtendedEntryPanel Grid.Column="70" Grid.Row="5" Grid.ColumnSpan="20" Grid.RowSpan="1"
                             x:Name="etTin" BorderColor="LightGray" BackColor="White" />
             <drawbase:DrawText Grid.Column="60" Grid.Row="6" Grid.ColumnSpan="10" Grid.RowSpan="1"

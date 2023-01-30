@@ -323,7 +323,7 @@ namespace EBM2x.UI.Backoffice.CustomerManagement
         {
             if (string.IsNullOrEmpty(etTIN.GetEntryValue()))
             {
-                EBM2x.UI.UiUtils.MsgBox.DisplayAlert(this, "Error", "Please enter the TIN.", "Ok");
+                EBM2x.UI.UiUtils.MsgBox.DisplayAlert(this, "Error", "Please enter the PIN.", "Ok");
                 return;
             }
 

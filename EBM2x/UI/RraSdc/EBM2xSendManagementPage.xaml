@@ -21,7 +21,7 @@
             <!--===========================================================================================-->
 
             <drawbase:IconTextButton Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="15" Grid.RowSpan="2"
-                             x:Name="btnBhfReq" Text="Bhf" FillRate="0.3" Icon="i_close.png"
+                             x:Name="btnBhfReq" Text="Branch ID" FillRate="0.3" Icon="i_close.png"
                              ButtonClicked="OnFunctionBhfReq"/>
 
             <drawbase:IconTextButton Grid.Column="15" Grid.Row="2" Grid.ColumnSpan="15" Grid.RowSpan="2"

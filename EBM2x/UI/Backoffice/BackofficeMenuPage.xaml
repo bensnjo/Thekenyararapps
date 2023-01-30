@@ -175,7 +175,7 @@
                 <draw:DrawBox Grid.Row="3" Grid.Column="1" Grid.RowSpan="42" Grid.ColumnSpan="4" Color="d4f0cd"/>
                 <draw:DrawBox Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="5" Color="3f922b"/>
                 <draw:DrawText Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="5" 
-                               Text="EBM2.1" TextAlign="CENTER" FillRate="0.6" TextColor="ffffff"/>
+                               Text="ETIMS" TextAlign="CENTER" FillRate="0.6" TextColor="ffffff"/>
                 <component:LogoBackground Icon="EBM2x.png" Color="ffffff" Align="RIGHT"  
                                           Grid.Row="25" Grid.Column="14" Grid.RowSpan="20" Grid.ColumnSpan="10"/>
 

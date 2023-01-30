@@ -113,7 +113,7 @@ namespace EBM2x.UI.Phone
                 if (count>0)
                 {
                     //EBM2x.UI.UiUtils.MsgBox.DisplayAlert(this, "Confirm", "Check the number of failed transfers. [" + count + "]", "Ok");
-                    EBM2x.UI.UiUtils.MsgBox.DisplayAlert(this, "Confirm", "Your Invoices was not reported to RRA because your Device is not connected to internet. Please reconnect it and wait for synchronization to complete.", "Ok");
+                    EBM2x.UI.UiUtils.MsgBox.DisplayAlert(this, "Confirm", "Your Invoices was not reported to KRA because your Device is not connected to internet. Please reconnect it and wait for synchronization to complete.", "Ok");
                     Navigation.InsertPageBefore(new PersonalShopSendMenuPage(), this);
                     await Navigation.PopAsync();
                     return;
@@ -128,7 +128,7 @@ namespace EBM2x.UI.Phone
                 if (amount > offlineMobile)
                 {
                     //EBM2x.UI.UiUtils.MsgBox.DisplayAlert(this, "Confirm", "Check the amount of failed transfers. [" + amount + "]", "Ok");
-                    EBM2x.UI.UiUtils.MsgBox.DisplayAlert(this, "Confirm", "Your Invoices was not reported to RRA because your Device is not connected to internet. Please reconnect it and wait for synchronization to complete.", "Ok");
+                    EBM2x.UI.UiUtils.MsgBox.DisplayAlert(this, "Confirm", "Your Invoices was not reported to KRA because your Device is not connected to internet. Please reconnect it and wait for synchronization to complete.", "Ok");
                     Navigation.InsertPageBefore(new PersonalShopSendMenuPage(), this);
                     await Navigation.PopAsync();
                 }

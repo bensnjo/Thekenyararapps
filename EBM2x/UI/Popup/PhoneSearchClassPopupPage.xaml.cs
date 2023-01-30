@@ -150,6 +150,7 @@ namespace EBM2x.UI.Popup
                         //IsSelected = true;
                         SetList(list);
                         searchEntry.SetEntryValue(record.ItemClsNm);
+                        etClassificationLvlEntryPanel.SetSelecteItem(new SystemCode() { Id = "4", Name = "" });
 
                         //END
                         /*

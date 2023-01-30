@@ -203,6 +203,7 @@ namespace EBM2x.Database.Master
                     if (!reader.IsDBNull(17)) record.cnclReqDt = reader.GetString(17);          // Cancel Requested Date
                     if (!reader.IsDBNull(18)) record.cnclDt = reader.GetString(18);             // Canceled Date
                     if (!reader.IsDBNull(19)) record.rfdDt = reader.GetString(19);              // Refunded Date
+                    if (!reader.IsDBNull(20)) record.totItemCnt = Math.Round(reader.GetDouble(20), 2);          // Total Item Count
                     if (!reader.IsDBNull(21)) record.taxblAmtA = Math.Round(reader.GetDouble(21), 2);          // Taxable Amount A
                     if (!reader.IsDBNull(22)) record.taxblAmtB = Math.Round(reader.GetDouble(22), 2);          // Taxable Amount B
                     if (!reader.IsDBNull(23)) record.taxblAmtC = Math.Round(reader.GetDouble(23), 2);          // Taxable Amount C
