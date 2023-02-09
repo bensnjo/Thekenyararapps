@@ -273,6 +273,8 @@ namespace EBM2x.Journal.tran
                 posModel.Journal.Add(Journal.JournalUtil.lpad(20, "TOTAL A-EX") + Journal.JournalUtil.lpad(15, (tranNode.NetAmount * tranNode.Sign)));
                 posModel.Journal.Add(Journal.JournalUtil.lpad(20, "TOTAL TAX-B") + Journal.JournalUtil.lpad(15, (vatAmount * tranNode.Sign)));
                 posModel.Journal.Add(Journal.JournalUtil.lpad(20, "TOTAL B-16%") + Journal.JournalUtil.lpad(15, (tranNode.TaxFlagBAmount * tranNode.Sign)));
+                posModel.Journal.Add(Journal.JournalUtil.lpad(20, "TOTAL TAX-E") + Journal.JournalUtil.lpad(15, (vatAmount * tranNode.Sign)));
+                posModel.Journal.Add(Journal.JournalUtil.lpad(20, "TOTAL E-8%") + Journal.JournalUtil.lpad(15, (tranNode.TaxFlagBAmount * tranNode.Sign)));
                 if (UIManager.Instance().PosModel.Environment.EnvPosSetup.NonVAT)
                 {
                     posModel.Journal.Add(Journal.JournalUtil.lpad(20, "TOTAL D") + Journal.JournalUtil.lpad(15, (tranNode.TaxFlagDAmount * tranNode.Sign)));

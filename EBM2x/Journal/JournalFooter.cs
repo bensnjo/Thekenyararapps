@@ -4,6 +4,11 @@ using EBM2x.Utils;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using ZXing;
+using ZXing.Common;
+using ZXing.QrCode;
+using System.Drawing;
+//using System.Printing;
 
 namespace EBM2x.Journal
 {
@@ -50,7 +55,19 @@ namespace EBM2x.Journal
                     posModel.Journal.Add("Date: " + DateTime.Now.ToString("dd-MM-yyyy") + "  " + "Time:" + DateTime.Now.ToString(" HH:mm:ss"));
                     posModel.Journal.Add("MRC : " + posModel.Environment.EnvPosSetup.GblMrcSysCod);
                     posModel.Journal.Add("", line);
-                    
+
+                    // clinton custom  qr print
+                    Models.config.EnvPosSetup envPosSetup = posModel.Environment.EnvPosSetup;
+
+                    string qrcode = envPosSetup.GblTaxIdNo + envPosSetup.GblBrcCod + posModel.TranModel.TranNode.RcptSign;
+
+                    posModel.Journal.Add("qrcode", qrcode);
+                   // Qrcoded(qrcode);
+
+                    posModel.Journal.Add("", line);
+                    // clint
+
+
                     posModel.Journal.Add("End of Legal Receipt");
                     posModel.Journal.Add("Powered by ETIMS v1");
                     //posModel.Journal.Add("", line2);
@@ -79,6 +96,18 @@ namespace EBM2x.Journal
                     posModel.Journal.Add("MRC : " + posModel.Environment.EnvPosSetup.GblMrcSysCod);
                     posModel.Journal.Add("", line);
 
+                    // clinton custom  qr print
+                    Models.config.EnvPosSetup envPosSetup = posModel.Environment.EnvPosSetup;
+
+                    string qrcode = envPosSetup.GblTaxIdNo + envPosSetup.GblBrcCod + posModel.TranModel.TranNode.RcptSign;
+
+                    posModel.Journal.Add("qrcode", qrcode);
+
+                    //Qrcoded(qrcode);
+
+                    posModel.Journal.Add("", line);
+                    // clint
+
                     posModel.Journal.Add("End of Legal Receipt");
                     posModel.Journal.Add("Powered by EBM v2");
                    }
@@ -94,10 +123,17 @@ namespace EBM2x.Journal
                    string qrcode = envPosSetup.GblTaxIdNo + envPosSetup.GblBrcCod + posModel.TranModel.TranNode.RcptSign;
                  
                     posModel.Journal.Add("qrcode", qrcode);
+                    posModel.Journal.Add("barcode", posModel.RegiTotal.RegiHeader.getBarcodeText(posModel.TranModel.TranInformation.ReceiptNumber));
+
                 }
                 else
                 {
                     posModel.Journal.Add(string.Empty);
+                    posModel.Journal.Add("barcode", posModel.RegiTotal.RegiHeader.getBarcodeText(posModel.TranModel.TranInformation.ReceiptNumber));
+                    Models.config.EnvPosSetup envPosSetup = posModel.Environment.EnvPosSetup;
+                    string qrcode = envPosSetup.GblTaxIdNo + envPosSetup.GblBrcCod + posModel.TranModel.TranNode.RcptSign;
+                    posModel.Journal.Add("qrcode", qrcode);
+
                 }
 
                 posModel.Journal.Add("cutpaper", string.Empty);  
@@ -176,6 +212,31 @@ namespace EBM2x.Journal
             }
             return buffer;
         }
+        public void Qrcoded(string data)
+        {
+            var qrCodeWriter = new BarcodeWriter();
+            qrCodeWriter.Format = BarcodeFormat.QR_CODE;
+            qrCodeWriter.Options = new EncodingOptions
+            {
+                Width = 100,
+                Height = 100,
+                Margin = 0
+            };
 
+            var qrCode = qrCodeWriter.Write(data);
+            Console.WriteLine(qrCode);
+        }
+
+    }
+
+    internal class BarcodeWriter
+    {
+        public BarcodeFormat Format { get; set; }
+        public EncodingOptions Options { get; set; }
+
+        internal object Write(string qrcode)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

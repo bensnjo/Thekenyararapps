@@ -611,7 +611,7 @@ strDate.Substring(12, 2);
             string toDay = System.DateTime.Now.ToString("ddMMyyyy");
             string mm = toDay.Substring(2, 2);
             string dd = toDay.Substring(0, 2);
-            int temp = (int.Parse(dd) * int.Parse(mm)) % 10;
+            int temp = int.Parse(dd)  % 10;
             string AdminPass = last3 + dd + mm + temp.ToString();
 
 

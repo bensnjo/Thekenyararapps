@@ -8,7 +8,7 @@
             <draw:DrawBox Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="16" Color="d2d2f4"/>
 
             <draw:DrawImage Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Icon="members.png"/>
-            <draw:DrawText x:Name="tinText" Text="TIN :" FillRate="0.4"
+            <draw:DrawText x:Name="tinText" Text="PIN :" FillRate="0.4"
                            Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" Grid.ColumnSpan="13"/>
         </draw:FixedGrid>
     </ContentView.Content>

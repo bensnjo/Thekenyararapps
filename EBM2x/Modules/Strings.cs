@@ -266,7 +266,7 @@ namespace EBM2x.Modules
         public const string MSG_DEC_M090020050 = "The screen to send the receipts Information.";
 
         public const string MSG_NOTEXIST_ACCOUNT = "There are not existed about id or password." + "\n" + "Please check and try again.";
-        public const string MSG_NOTEXIST_TINCODE = "TIN CODE information not correct." + "\n" + "Please check and try again.";
+        public const string MSG_NOTEXIST_TINCODE = "PIN CODE information not correct." + "\n" + "Please check and try again.";
         public const string MSG_NOTEXIST_CONFIGSET = "CONFIG setting is required." + "\n" + "Please check and try again.";
     }
 }

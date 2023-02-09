@@ -187,6 +187,8 @@ namespace EBM2x.UI.Backoffice.StockManagement
             journal.Add(Journal.JournalUtil.lpad(17, "TOTAL A-EX") + Journal.JournalUtil.lpad(15, (stockInOutModel.TranRecord.TaxblAmtA)));
             journal.Add(Journal.JournalUtil.lpad(17, "TOTAL B-16%") + Journal.JournalUtil.lpad(15, (stockInOutModel.TranRecord.TaxblAmtB)));
             journal.Add(Journal.JournalUtil.lpad(17, "TOTAL TAX-B") + Journal.JournalUtil.lpad(15, (stockInOutModel.TranRecord.TaxAmtB)));
+            journal.Add(Journal.JournalUtil.lpad(17, "TOTAL E-8%") + Journal.JournalUtil.lpad(15, (stockInOutModel.TranRecord.TaxblAmtE)));
+            journal.Add(Journal.JournalUtil.lpad(17, "TOTAL TAX-E") + Journal.JournalUtil.lpad(15, (stockInOutModel.TranRecord.TaxAmtE)));
             if (UIManager.Instance().PosModel.Environment.EnvPosSetup.NonVAT)
             {
                 journal.Add(Journal.JournalUtil.lpad(17, "TOTAL D") + Journal.JournalUtil.lpad(15, (stockInOutModel.TranRecord.TaxblAmtD)));

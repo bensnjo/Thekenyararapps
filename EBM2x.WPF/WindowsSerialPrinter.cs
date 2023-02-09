@@ -814,17 +814,19 @@ namespace EBM2x.WPF
             ev.Graphics.DrawString("Total Price", printFont, brush, (cellWidth * 31) + 3, (cellHeight * 12) + 15);
 
             ev.Graphics.DrawString("Total Rwf", printFont, brush, (cellWidth * 24) + 3, (cellHeight * 45) + 15);
-            ev.Graphics.DrawString("Total A-EX Rwf", printFont, brush, (cellWidth * 24) + 3, (cellHeight * 47) + 15);
-            ev.Graphics.DrawString("Total B-16% Rwf", printFont, brush, (cellWidth * 24) + 3, (cellHeight * 49) + 15);
+            ev.Graphics.DrawString("Total A-EX KES", printFont, brush, (cellWidth * 24) + 3, (cellHeight * 47) + 15);
+            ev.Graphics.DrawString("Total B-16% KES", printFont, brush, (cellWidth * 24) + 3, (cellHeight * 49) + 15);
+            ev.Graphics.DrawString("Total E-8% KES", printFont, brush, (cellWidth * 24) + 3, (cellHeight * 49) + 15);
             if (UIManager.Instance().PosModel.Environment.EnvPosSetup.NonVAT)
             {
                 ev.Graphics.DrawString("Total D", printFont, brush, (cellWidth * 24) + 3, (cellHeight * 51) + 15);
             }
             else
             {
-                ev.Graphics.DrawString("Total Tax B Rwf", printFont, brush, (cellWidth * 24) + 3, (cellHeight * 51) + 15);
+                ev.Graphics.DrawString("Total Tax B KES", printFont, brush, (cellWidth * 24) + 3, (cellHeight * 51) + 15);
+                ev.Graphics.DrawString("Total Tax E KES", printFont, brush, (cellWidth * 24) + 3, (cellHeight * 51) + 15);
             }
-            ev.Graphics.DrawString("Total Tax Rwf", printFont, brush, (cellWidth * 24) + 3, (cellHeight * 53) + 15);
+            ev.Graphics.DrawString("Total Tax KES", printFont, brush, (cellWidth * 24) + 3, (cellHeight * 53) + 15);
         }
     }
 }

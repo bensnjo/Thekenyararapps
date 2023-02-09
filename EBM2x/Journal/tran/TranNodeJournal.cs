@@ -54,7 +54,7 @@ namespace EBM2x.Journal.tran
                 if (!string.IsNullOrEmpty(tranNode.CustomerNode.Tin))
                 {
                     // CLIENT TIN 
-                    posModel.Journal.Add("", "CLIENT TIN : " + tranNode.CustomerNode.Tin);
+                    posModel.Journal.Add("", "CLIENT PIN : " + tranNode.CustomerNode.Tin);
                     posModel.Journal.Add("", "CLIENT NAME: " + tranNode.CustomerNode.CustomerName);
                 }
                 //if (!string.IsNullOrEmpty(tranNode.InsurerNode.InsurerName))
@@ -187,7 +187,7 @@ namespace EBM2x.Journal.tran
                 if (!string.IsNullOrEmpty(tranNode.CustomerNode.Tin))
                 {
                     // CLIENT TIN
-                    posModel.Journal.Add("", "CLIENT TIN : " + tranNode.CustomerNode.Tin);
+                    posModel.Journal.Add("", "CLIENT PIN : " + tranNode.CustomerNode.Tin);
                     posModel.Journal.Add("", "CLIENT NAME: " + tranNode.CustomerNode.CustomerName);
                 }
 

@@ -17,11 +17,11 @@ namespace EBM2x.UI.Component
         {
             if(string.IsNullOrEmpty(tranNode.CustomerNode.CustomerCode))
             {
-                tinText.InvalidateSurface("TIN :");
+                tinText.InvalidateSurface("PIN :");
             }
             else
             {
-                string text = string.Format("TIN :{0} {1}", tranNode.CustomerNode.Tin, tranNode.CustomerNode.CustomerName);
+                string text = string.Format("PIN :{0} {1}", tranNode.CustomerNode.Tin, tranNode.CustomerNode.CustomerName);
                 tinText.InvalidateSurface(text);
             }
         }

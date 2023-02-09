@@ -40,7 +40,7 @@ namespace EBM2x.UI
 
         //public static string AppVersion = "v20220908.NEW.0148";
        // public static string AppVersion = "v20221028.NEW.0149";
-        public static string AppVersion = "v20221103.NEW.0150";
+        public static string AppVersion = "v20230131.NEW.0100";
 
         //======================================================
         // "v20200318.NEW.0105";
