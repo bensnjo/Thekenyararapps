@@ -20,7 +20,7 @@ namespace EBM2x.Journal
                 // posModel.getReceiptInfor().getPosImageYn()                  //--------------------------------------------------------------------------
                 if (posModel.Environment.EnvFunctionNode.UsePrintLogo.Equals("Y"))
                 {
-                    posModel.Journal.Add("logo", string.Empty);
+                   // posModel.Journal.Add("logo", string.Empty);
                 }
                 else
                 {

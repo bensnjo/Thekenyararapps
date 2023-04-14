@@ -14,7 +14,7 @@ using Xamarin.Forms;
 
 namespace EBM2x.Droid
 {
-    [Activity(Label = "@string/ApplicationName", Icon = "@mipmap/icon", Theme = "@style/MainTheme",
+    [Activity(Label = "@string/ApplicationName", Icon = "@drawable/eTIMS_logo", Theme = "@style/MainTheme",
         ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation,
         ScreenOrientation = ScreenOrientation.Landscape)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity

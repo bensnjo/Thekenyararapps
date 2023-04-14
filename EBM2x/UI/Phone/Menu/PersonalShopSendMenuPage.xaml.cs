@@ -83,12 +83,12 @@ namespace EBM2x.UI.Phone.Menu
 
                 case "Back":
                     UIManager.Instance().InputModel.Clear();
-                    if (UIManager.Instance().PosModel.Environment.EnvPosSetup.OfflineDays > 0)
+                    if (UIManager.Instance().PosModel.Environment.EnvPosSetup.OfflineDays > 100)
                     {
                         DateTime dateTime = DateTime.Now;
                         dateTime.AddDays(UIManager.Instance().PosModel.Environment.EnvPosSetup.OfflineDays * (-1));
                         int count = RraSdcJsonWriter.GetTransactionMobileCount(dateTime.ToString("yyyyMMdd"));
-                        if (count > 0)
+                        if (count > 100)
                         {
                             //EBM2x.UI.UiUtils.MsgBox.DisplayAlert(this, "Confirm", "Check the number of failed transfers. [" + count + "]", "Ok");
                             EBM2x.UI.UiUtils.MsgBox.DisplayAlert(this, "Confirm", "Your computer was not connected to internet for more than 3 days/ please connect it to internet to be synchronized and wait for synchronization to complete.", "Ok");
@@ -103,7 +103,7 @@ namespace EBM2x.UI.Phone.Menu
                     else if (UIManager.Instance().PosModel.Environment.EnvPosSetup.OfflineAmount > 0)
                     {
                         double amount = RraSdcJsonWriter.GetTransactionSalesReceipt();
-                        if (amount > 500000)
+                        if (amount > 5000000)
                         {
                             // EBM2x.UI.UiUtils.MsgBox.DisplayAlert(this, "Confirm", "Check the amount of failed transfers. [" + amount + "]", "Ok");
                             EBM2x.UI.UiUtils.MsgBox.DisplayAlert(this, "Confirm", "Your Invoices was not reported to KRA because your computer is not connected to internet. Please reconnect it and wait for synchronization to complete.", "Ok");
@@ -137,7 +137,7 @@ namespace EBM2x.UI.Phone.Menu
                     try
                     {
                         int newFromInvoice = int.Parse(UIManager.Instance().InputModel.EnteredText);
-                        if (newFromInvoice + 100 < toInvoice)
+                        if (newFromInvoice + 1000 < toInvoice)
                         {
                             EBM2x.UI.UiUtils.MsgBox.DisplayAlert(this, "From Invoice", "The maximum number that can be processed at one time is 100.", "OK");
 
@@ -185,7 +185,7 @@ namespace EBM2x.UI.Phone.Menu
                             UIManager.Instance().InputModel.Clear();
                             break;
                         }
-                        if (fromInvoice + 100 < newToInvoice)
+                        if (fromInvoice + 1000 < newToInvoice)
                         {
                             EBM2x.UI.UiUtils.MsgBox.DisplayAlert(this, "To Invoice", "The maximum number that can be processed at one time is 100.", "OK");
 
@@ -283,7 +283,7 @@ namespace EBM2x.UI.Phone.Menu
                 RraSdcJsonWriter.WriteTransaction(rraSdcUploadModel);
             }
         }
-
+        
 
     }
 }

@@ -1187,7 +1187,7 @@ namespace EBM2x.UI.Backoffice.SalesManagement
                 //journal.Add("", line);
                 //}
                 journal.Add("End of Legal Receipt");
-                journal.Add("Powered by EBM v2");
+                journal.Add("Powered by ETIMS v1");
                 //journal.Add("", line2);
 
                 journal.Add("");
@@ -1245,7 +1245,7 @@ namespace EBM2x.UI.Backoffice.SalesManagement
                 }
                 
                 journal.Add("End of Legal Receipt");
-                journal.Add("Powered by EBM v2");
+                journal.Add("Powered by ETIMS v1");
                 //journal.Add("", line2);
 
                 journal.Add("");
@@ -1587,7 +1587,7 @@ namespace EBM2x.UI.Backoffice.SalesManagement
             //journal.Add("", line);
             //}
             journal.Add("End of Legal Receipt");
-            journal.Add("Powered by EBM v2");
+            journal.Add("Powered by ETIMS v1");
             //journal.Add("", line2);
 
             // 반품일 경우 바코드를 출력하지 않음
@@ -1741,7 +1741,9 @@ namespace EBM2x.UI.Backoffice.SalesManagement
                 journal.Add("RECEIPT NUMBER : " + salesModel.TranRecord.InvcNo);
                 journal.Add("Date: " + Common.DateTimeFormat(salesModel.TranRecord.CfmDt).ToString("dd-MM-yyyy") + " " + "Time:" + Common.DateTimeFormat(salesModel.TranRecord.CfmDt).ToString(" HH:mm:ss"));
                 journal.Add("MRC: " + envPosSetup.GblMrcSysCod);
-                journal.Add("Powered by EBM v2");
+                journal.Add("Powered by ETIMS v1");
+                //string qrcode = envPosSetup.GblTaxIdNo + envPosSetup.GblBrcCod + trnsSaleReceiptRecord.RcptSign;
+                //journal.Add("qrcode", qrcode);
             }
             else
             {
@@ -1774,10 +1776,12 @@ namespace EBM2x.UI.Backoffice.SalesManagement
                 journal.Add("RECEIPT NUMBER : " + salesModel.TranRecord.InvcNo);
                 journal.Add("Date : " + Common.DateTimeFormat(salesModel.TranRecord.CfmDt).ToString("dd-MM-yyyy") + "   " + "Time :" + Common.DateTimeFormat(salesModel.TranRecord.CfmDt).ToString(" HH:mm:ss"));
                 journal.Add("MRC : " + envPosSetup.GblMrcSysCod);
-                journal.Add("Powered by EBM v2");
+                journal.Add("Powered by ETIMS v1");
             }
             //add data from qr code
 
+            string qrcode = envPosSetup.GblTaxIdNo + envPosSetup.GblBrcCod + trnsSaleReceiptRecord.RcptSign;
+            journal.Add("qrcode", qrcode);
             //end of data for qr code
 
             return journal;

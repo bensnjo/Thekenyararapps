@@ -47,7 +47,7 @@ namespace EBM2x.Droid
             {
                 if (node.Type.Equals("qrcode"))
                 {
-                    message = RraSdcService.RECEIPT_URL + "/common/link/ebm/receipt/indexEbmReceiptData?Data=" + node.Data;
+                    message = RraSdcService.RECEIPT_URL + "common/link/etims/receipt/indexEtimsReceiptData?Data=" + node.Data;
                     break;
                 }
             }
@@ -128,11 +128,11 @@ namespace EBM2x.Droid
                         if (UIManager.Instance().PosModel.Environment.EnvPosSetup.PrintingLogo == "Y")
                         {
                             // logo 출력
-                            using (var stream = ResourceUtil.GetImageStream("rralogo.bytes"))
-                            {
-                                byte[] img = ResourceUtil.ReadFully(stream);
-                                bluetoothSocket?.OutputStream.Write(img, 0, img.Length);
-                            }
+                            //using (var stream = ResourceUtil.GetImageStream("rralogo.bytes"))
+                            //{
+                            //    byte[] img = ResourceUtil.ReadFully(stream);
+                            //    bluetoothSocket?.OutputStream.Write(img, 0, img.Length);
+                            //}
                         }
 
                         byte[] modelLeft = { (byte)0x1b, (byte)0x61, (byte)0x00 };
@@ -175,7 +175,7 @@ namespace EBM2x.Droid
 
                         if (!string.IsNullOrEmpty(qrData))
                         {
-                            string qrdata = RraSdcService.RECEIPT_URL + "/common/link/ebm/receipt/indexEbmReceiptData?Data=" + qrData;
+                            string qrdata = RraSdcService.RECEIPT_URL + "common/link/etims/receipt/indexEtimsReceiptData?Data=" + qrData;
 
                             int store_len = qrdata.Length + 3;
                             byte store_pL = (byte)(store_len % 256);

@@ -51,7 +51,7 @@ namespace EBM2x.Journal
                     posModel.Journal.Add("", line);
                    
                     //posModel.Journal.Add(Journal.JournalUtil.lpad(20, "RECEIPT NUMBER :") + Journal.JournalUtil.lpad(15, posModel.TranInformation.ReceiptNumber));
-                    posModel.Journal.Add(Journal.JournalUtil.lpad(17, "RECEIPT NUMBER :") + Journal.JournalUtil.lpad(15, posModel.TranInformation.InvoiceN0));
+                    posModel.Journal.Add(Journal.JournalUtil.lpad(17, "INVOICE NUMBER :") + Journal.JournalUtil.lpad(15, String.Concat(posModel.Environment.EnvPosSetup.GblSdcSysNum , posModel.TranInformation.InvoiceN0)));
                     posModel.Journal.Add("Date: " + DateTime.Now.ToString("dd-MM-yyyy") + "  " + "Time:" + DateTime.Now.ToString(" HH:mm:ss"));
                     posModel.Journal.Add("MRC : " + posModel.Environment.EnvPosSetup.GblMrcSysCod);
                     posModel.Journal.Add("", line);
@@ -91,7 +91,7 @@ namespace EBM2x.Journal
                     posModel.Journal.Add(GetFormatData(posModel.TranModel.TranNode.RcptSign));
                     //posModel.Journal.Add("PE5K-66C7-RE3L-BZCB");
                     posModel.Journal.Add("", line);
-                    posModel.Journal.Add(Journal.JournalUtil.lpad(20, "RECEIPT NUMBER :") + Journal.JournalUtil.lpad(15, posModel.TranInformation.InvoiceN0));
+                    posModel.Journal.Add(Journal.JournalUtil.lpad(20, "INVOIVE NUMBER :") + Journal.JournalUtil.lpad(15, String.Concat(posModel.Environment.EnvPosSetup.GblSdcSysNum, posModel.TranInformation.InvoiceN0)));
                     posModel.Journal.Add("Date : " + DateTime.Now.ToString("dd-MM-yyyy") + "   " + "Time :" + DateTime.Now.ToString(" HH:mm:ss"));
                     posModel.Journal.Add("MRC : " + posModel.Environment.EnvPosSetup.GblMrcSysCod);
                     posModel.Journal.Add("", line);
@@ -109,7 +109,7 @@ namespace EBM2x.Journal
                     // clint
 
                     posModel.Journal.Add("End of Legal Receipt");
-                    posModel.Journal.Add("Powered by EBM v2");
+                    posModel.Journal.Add("Powered by ETIMS v1");
                    }
                 
                 if (posModel.TranModel.TranNode.TranFlag.Equals("N"))
@@ -128,6 +128,7 @@ namespace EBM2x.Journal
                 }
                 else
                 {
+                    
                     posModel.Journal.Add(string.Empty);
                     posModel.Journal.Add("barcode", posModel.RegiTotal.RegiHeader.getBarcodeText(posModel.TranModel.TranInformation.ReceiptNumber));
                     Models.config.EnvPosSetup envPosSetup = posModel.Environment.EnvPosSetup;

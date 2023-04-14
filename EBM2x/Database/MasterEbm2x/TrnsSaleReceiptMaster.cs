@@ -383,6 +383,8 @@ namespace EBM2x.Database.Master
                 return "ERROR";
         }
 
+
+
         public string GetReceiptSignature(ReceiptSignature receiptSignature)
         {
             string data = receiptSignature.RcptDt;  //sdc_change_dt(strRcptDt)

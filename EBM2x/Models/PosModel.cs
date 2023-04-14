@@ -50,7 +50,7 @@ namespace EBM2x.Models
         {
             LogoImage = "EBM2xBlack.png";
             SalesTitleColor = "3f922b";
-            SalesTitleText = "EBM 2.x";
+            SalesTitleText = "ETIMS 1.0";
 
             DeviceType = string.Empty;
 

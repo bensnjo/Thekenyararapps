@@ -205,13 +205,13 @@ namespace EBM2x.UI.Tablet
         public async void CheckWaitTransaction()
         {
           
-            if (UIManager.Instance().PosModel.Environment.EnvPosSetup.OfflineDays > 0)
+            if (UIManager.Instance().PosModel.Environment.EnvPosSetup.OfflineDays > 100)
             {
                 
                 DateTime dateTime = DateTime.Now;
                 dateTime.AddDays(UIManager.Instance().PosModel.Environment.EnvPosSetup.OfflineDays * (-1));
                 int count = RraSdcJsonWriter.GetTransactionOldCount(dateTime.ToString("yyyyMMdd"));
-                if (count > 0)
+                if (count > 100)
                 {
                     pageIsActive = false;
                     //EBM2x.UI.UiUtils.MsgBox.DisplayAlert(this, "Confirm", "Check the number of failed transfers. [" + count + "]", "Ok");
@@ -224,9 +224,9 @@ namespace EBM2x.UI.Tablet
 
             if (UIManager.Instance().PosModel.Environment.EnvPosSetup.OfflineAmount > 0)
             {
-                double offlineAmtWindows = 20000000;
-                double offlineTablet = 5000000;
-                double offlineMobile = 500000;
+                double offlineAmtWindows = 1000000000;
+                double offlineTablet = 1000000000;
+                double offlineMobile = 1000000000;
                 double amount = RraSdcJsonWriter.GetTransactionSalesReceipt();
                 if (UIManager.Instance().IsWindows || UIManager.Instance().IsMySQL)
                 {

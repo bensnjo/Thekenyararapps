@@ -110,7 +110,7 @@ namespace EBM2x.UI.Phone
                 DateTime dateTime = DateTime.Now;
                 dateTime.AddDays(UIManager.Instance().PosModel.Environment.EnvPosSetup.OfflineDays * (-1));
                 int count = RraSdcJsonWriter.GetTransactionMobileCount(dateTime.ToString("yyyyMMdd"));
-                if (count>0)
+                if (count>100)
                 {
                     //EBM2x.UI.UiUtils.MsgBox.DisplayAlert(this, "Confirm", "Check the number of failed transfers. [" + count + "]", "Ok");
                     EBM2x.UI.UiUtils.MsgBox.DisplayAlert(this, "Confirm", "Your Invoices was not reported to KRA because your Device is not connected to internet. Please reconnect it and wait for synchronization to complete.", "Ok");

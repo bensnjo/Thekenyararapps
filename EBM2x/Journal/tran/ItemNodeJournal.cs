@@ -269,12 +269,38 @@ namespace EBM2x.Journal.tran
                 double totDspAmount = tranNode.Subtotal;
                 Models.tran.ItemNode checkItemNode = posModel.TranModel.TranNode.ItemList.CheckInsurance();
                 if (checkItemNode != null) totDspAmount = tranNode.Subtotal + tranNode.InsuranceDiscountAmount;
+                
                 posModel.Journal.Add("bold", Journal.JournalUtil.lpad(20, "TOTAL") + Journal.JournalUtil.lpad(15, (totDspAmount * tranNode.Sign)));
                 posModel.Journal.Add(Journal.JournalUtil.lpad(20, "TOTAL A-EX") + Journal.JournalUtil.lpad(15, (tranNode.NetAmount * tranNode.Sign)));
-                posModel.Journal.Add(Journal.JournalUtil.lpad(20, "TOTAL TAX-B") + Journal.JournalUtil.lpad(15, (vatAmount * tranNode.Sign)));
-                posModel.Journal.Add(Journal.JournalUtil.lpad(20, "TOTAL B-16%") + Journal.JournalUtil.lpad(15, (tranNode.TaxFlagBAmount * tranNode.Sign)));
-                posModel.Journal.Add(Journal.JournalUtil.lpad(20, "TOTAL TAX-E") + Journal.JournalUtil.lpad(15, (vatAmount * tranNode.Sign)));
-                posModel.Journal.Add(Journal.JournalUtil.lpad(20, "TOTAL E-8%") + Journal.JournalUtil.lpad(15, (tranNode.TaxFlagBAmount * tranNode.Sign)));
+                var taxb = tranNode.TaxFlagBAmount * tranNode.Sign;
+                if(taxb > 0)
+                {
+                    posModel.Journal.Add(Journal.JournalUtil.lpad(20, "TOTAL TAX-B") + Journal.JournalUtil.lpad(15, (vatAmount * tranNode.Sign)));
+
+                    posModel.Journal.Add(Journal.JournalUtil.lpad(20, "TOTAL B-16%") + Journal.JournalUtil.lpad(15, (tranNode.TaxFlagBAmount * tranNode.Sign)));
+
+                }else
+                {
+                    posModel.Journal.Add(Journal.JournalUtil.lpad(20, "TOTAL TAX-B") + Journal.JournalUtil.lpad(15, 0.00));
+
+                    posModel.Journal.Add(Journal.JournalUtil.lpad(20, "TOTAL B-16%") + Journal.JournalUtil.lpad(15, 0.00));
+
+                }
+                // posModel.Journal.Add(Journal.JournalUtil.lpad(20, "TOTAL B-16%") + Journal.JournalUtil.lpad(15, (tranNode.TaxFlagBAmount * tranNode.Sign)));
+
+                var taxe = tranNode.TaxFlagEAmount * tranNode.Sign;
+
+                if(taxe > 0)
+                {
+                    posModel.Journal.Add(Journal.JournalUtil.lpad(20, "TOTAL TAX-E") + Journal.JournalUtil.lpad(15, (vatAmount * tranNode.Sign)));
+                    posModel.Journal.Add(Journal.JournalUtil.lpad(20, "TOTAL E-8%") + Journal.JournalUtil.lpad(15, (tranNode.TaxFlagEAmount * tranNode.Sign)));
+
+                }else
+                {
+                    posModel.Journal.Add(Journal.JournalUtil.lpad(20, "TOTAL TAX-E") + Journal.JournalUtil.lpad(15, 0.00));
+                    posModel.Journal.Add(Journal.JournalUtil.lpad(20, "TOTAL E-8%") + Journal.JournalUtil.lpad(15, 0.00));
+
+                }
                 if (UIManager.Instance().PosModel.Environment.EnvPosSetup.NonVAT)
                 {
                     posModel.Journal.Add(Journal.JournalUtil.lpad(20, "TOTAL D") + Journal.JournalUtil.lpad(15, (tranNode.TaxFlagDAmount * tranNode.Sign)));

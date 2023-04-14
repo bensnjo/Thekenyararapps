@@ -172,8 +172,8 @@ namespace EBM2x.Droid
 
                         if (!string.IsNullOrEmpty(qrData))
                         {
-                            string qrdata = RraSdcService.RECEIPT_URL + "/common/link/ebm/receipt/indexEbmReceipt?rcptNo=" + qrData;
-
+                            string qrdata = RraSdcService.RECEIPT_URL + "common/link/etims/receipt/indexEtimsReceiptData?rcptNo=" + qrData;
+                            
                             int store_len = qrdata.Length + 3;
                             byte store_pL = (byte)(store_len % 256);
                             byte store_pH = (byte)(store_len / 256);
